@@ -1,0 +1,97 @@
+﻿/* CSS para formatar as TabPanel*/
+#tabAtletaProva_tabLocamotiva
+{
+	font-family:arial,sans-serif;
+	font-size:20px;
+	font-weight:900;
+	font-style:italic;
+	color:#fff;
+	padding:60px;
+	padding-top:30px;
+}
+
+.tabBody
+{
+    height:52px;
+    line-height:60px;
+    text-align:center;
+} 
+.demo
+{
+	float:left;
+	padding:20px;
+}  
+P,H2{ font-family:Calibri; } 
+
+.linkedin-gray .ajax__tab_header 
+{
+	color:#fff;
+}
+.linkedin-gray .ajax__tab_outer
+{
+    background:url(../img/gray_left.gif) no-repeat 0px 0px;
+}
+.linkedin-gray .ajax__tab_inner
+{
+    background:url(../img/gray_right.gif) no-repeat 100% 0px;
+}
+.linkedin-gray .ajax__tab_hover .ajax__tab_outer
+{
+    background:url(../img/gray_left.gif) no-repeat 0px -150px;
+}
+.linkedin-gray .ajax__tab_hover .ajax__tab_inner
+{
+    background:url(../img/gray_right.gif) no-repeat 100% -150px;
+}
+.linkedin-gray .ajax__tab_active .ajax__tab_outer
+{
+    background:url(../img/gray_left.gif) no-repeat 0px -300px;
+}
+.linkedin-gray .ajax__tab_active .ajax__tab_inner
+{
+    background:url(../img/gray_right.gif) no-repeat 100% -300px;
+}
+.linkedin-gray .ajax__tab_body 
+{
+	/*border:solid 2px #778d98;	*/
+	border-bottom:solid 1px #385260;
+	border-left:solid 1px #385260;
+	border-right:solid 1px #385260;
+	
+}
+
+/* ajax__tab_xp-theme theme */
+.linkedin .ajax__tab_header 
+{
+	/*font-size:11px;*/
+	font-size:20px;
+	font-weight:bold;
+    font-family:arial, sans-serif;
+}
+.linkedin .ajax__tab_active .ajax__tab_outer,
+.linkedin .ajax__tab_header .ajax__tab_outer,
+.linkedin .ajax__tab_hover .ajax__tab_outer
+{
+    margin-right:4px;
+}
+.linkedin .ajax__tab_active .ajax__tab_inner,
+.linkedin .ajax__tab_header .ajax__tab_inner,
+.linkedin .ajax__tab_hover .ajax__tab_inner
+{
+    margin-left:3px; /* offset the width of the left image */
+}
+.linkedin .ajax__tab_active .ajax__tab_tab,
+.linkedin .ajax__tab_hover .ajax__tab_tab,
+.linkedin .ajax__tab_header .ajax__tab_tab
+{
+	margin-right:0px;	
+	/*padding:8px 23px 8px 20px;*/
+	padding:0px 25px 0px 20px;
+}
+.linkedin .ajax__tab_body 
+{
+    background-color:#64818F;
+    font-family:arial,tahoma,helvetica;
+    font-size:10pt;
+    padding:15px;
+}
