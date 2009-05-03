@@ -1,0 +1,12 @@
+.DS_Store
+**/pkg
+**/doc
+pkg
+doc
+*~
+*swp
+*swo
+*.gem
+log/*.log
+tmp/**/*
+
