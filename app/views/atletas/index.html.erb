@@ -1,0 +1,28 @@
+<h1>Listing atletas</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Data nasc</th>
+    <th>Cpf</th>
+    <th>Celular</th>
+    <th>Notas</th>
+  </tr>
+
+<% for atleta in @atletas %>
+  <tr>
+    <td><%=h atleta.nome %></td>
+    <td><%=h atleta.data_nasc %></td>
+    <td><%=h atleta.cpf %></td>
+    <td><%=h atleta.celular %></td>
+    <td><%=h atleta.notas %></td>
+    <td><%= link_to 'Show', atleta %></td>
+    <td><%= link_to 'Edit', edit_atleta_path(atleta) %></td>
+    <td><%= link_to 'Destroy', atleta, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New atleta', new_atleta_path %>
