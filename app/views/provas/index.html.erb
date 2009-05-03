@@ -1,0 +1,30 @@
+<h1>Listing provas</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Etapa</th>
+    <th>Data</th>
+    <th>Local</th>
+    <th>Url</th>
+    <th>Distancia</th>
+  </tr>
+
+<% for prova in @provas %>
+  <tr>
+    <td><%=h prova.nome %></td>
+    <td><%=h prova.etapa %></td>
+    <td><%=h prova.data %></td>
+    <td><%=h prova.local %></td>
+    <td><%=h prova.url %></td>
+    <td><%=h prova.distancia %></td>
+    <td><%= link_to 'Show', prova %></td>
+    <td><%= link_to 'Edit', edit_prova_path(prova) %></td>
+    <td><%= link_to 'Destroy', prova, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New prova', new_prova_path %>

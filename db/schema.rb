@@ -9,13 +9,42 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090503063737) do
+ActiveRecord::Schema.define(:version => 20090503165454) do
 
   create_table "atletas", :force => true do |t|
     t.string   "nome"
     t.datetime "data_nasc"
     t.string   "cpf"
     t.string   "celular"
+    t.text     "notas"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "provas", :force => true do |t|
+    t.string   "nome"
+    t.string   "etapa"
+    t.datetime "data"
+    t.string   "local"
+    t.string   "url"
+    t.string   "distancia"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "resultados", :force => true do |t|
+    t.string   "nome"
+    t.string   "sexo",             :limit => 1
+    t.string   "faixaEtaria",      :limit => 10
+    t.string   "equipe"
+    t.datetime "tempoLiquido"
+    t.datetime "tempoOficial"
+    t.string   "classGeral",       :limit => 5
+    t.string   "classSexo",        :limit => 5
+    t.string   "classFaixaEtaria", :limit => 5
+    t.datetime "ritmo"
+    t.string   "distancia",        :limit => 15
+    t.string   "noLugarDe"
     t.text     "notas"
     t.datetime "created_at"
     t.datetime "updated_at"
