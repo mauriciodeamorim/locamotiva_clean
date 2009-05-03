@@ -23,3 +23,175 @@ Migrating to CreateAtletas (20090503063737)
   [4;36;1mSQL (0.000008)[0m   [0;1mSHOW FIELDS FROM `atletas`[0m
   [4;35;1mSQL (0.001551)[0m   [0mdescribe `atletas`[0m
   [4;36;1mSQL (0.002014)[0m   [0;1mSHOW KEYS FROM `atletas`[0m
+
+
+Processing AtletasController#index (for 127.0.0.1 at 2009-05-03 04:48:42) [GET]
+  Session ID: b9aa78d144b5991ffdbe581e6d59f9aa
+  Parameters: {"action"=>"index", "controller"=>"atletas"}
+  [4;36;1mSQL (0.000003)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAtleta Load (0.004072)[0m   [0;1mSELECT * FROM `atletas` [0m
+Rendering template within layouts/atletas
+Rendering atletas/index
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00002 (0%) | DB: 0.00408 (20%) | 200 OK [http://localhost/atletas]
+  [4;35;1mSQL (0.000000)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.000098)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AtletasController#index (for 127.0.0.1 at 2009-05-03 12:50:30) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--7e10783a837bb8654cdcc3fd3760bd6ef27a3466
+  Parameters: {"action"=>"index", "controller"=>"atletas"}
+  [4;35;1mAtleta Load (0.000307)[0m   [0mSELECT * FROM `atletas` [0m
+Rendering template within layouts/atletas
+Rendering atletas/index
+Completed in 0.01284 (77 reqs/sec) | Rendering: 0.00068 (5%) | DB: 0.00040 (3%) | 200 OK [http://localhost/atletas]
+  [4;36;1mSQL (0.000053)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000014)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000002)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001251)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAtletas (20090503063737)
+Migrating to CreateProvas (20090503155324)
+  [4;36;1mSQL (0.005692)[0m   [0;1mCREATE TABLE `provas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nome` varchar(255), `etapa` varchar(255), `data` datetime, `local` varchar(255), `url` varchar(255), `distancia` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001141)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090503155324')[0m
+  [4;36;1mSQL (0.000293)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000077)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000020)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000729)[0m   [0mSHOW FIELDS FROM `atletas`[0m
+  [4;36;1mSQL (0.001682)[0m   [0;1mdescribe `atletas`[0m
+  [4;35;1mSQL (0.000541)[0m   [0mSHOW KEYS FROM `atletas`[0m
+  [4;36;1mSQL (0.003664)[0m   [0;1mSHOW FIELDS FROM `provas`[0m
+  [4;35;1mSQL (0.000013)[0m   [0mdescribe `provas`[0m
+  [4;36;1mSQL (0.000003)[0m   [0;1mSHOW KEYS FROM `provas`[0m
+  [4;36;1mSQL (0.000263)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000158)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAtleta Columns (0.000100)[0m   [0;1mSHOW FIELDS FROM `atletas`[0m
+  [4;35;1mProva Columns (0.000068)[0m   [0mSHOW FIELDS FROM `provas`[0m
+  [4;36;1mSQL (0.002487)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.000739)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000290)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000345)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAtletas (20090503063737)
+Migrating to CreateProvas (20090503155324)
+Migrating to CreateResultados (20090503165454)
+  [4;36;1mSQL (0.052754)[0m   [0;1mCREATE TABLE `resultados` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nome` varchar(255), `sexo` varchar(1), `faixaEtaria` varchar(10), `equipe` varchar(255), `tempoLiquido` datetime, `tempoOficial` datetime, `classGeral` varchar(5), `classSexo` varchar(5), `classFaixaEtaria` varchar(5), `ritmo` datetime, `distancia` varchar(15), `noLugarDe` varchar(255), `notas` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001080)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090503165454')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.004567)[0m   [0mSHOW FIELDS FROM `atletas`[0m
+  [4;36;1mSQL (0.000038)[0m   [0;1mdescribe `atletas`[0m
+  [4;35;1mSQL (0.001592)[0m   [0mSHOW KEYS FROM `atletas`[0m
+  [4;36;1mSQL (0.001925)[0m   [0;1mSHOW FIELDS FROM `provas`[0m
+  [4;35;1mSQL (0.004465)[0m   [0mdescribe `provas`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW KEYS FROM `provas`[0m
+  [4;35;1mSQL (0.000153)[0m   [0mSHOW FIELDS FROM `resultados`[0m
+  [4;36;1mSQL (0.000055)[0m   [0;1mdescribe `resultados`[0m
+  [4;35;1mSQL (0.000019)[0m   [0mSHOW KEYS FROM `resultados`[0m
+
+
+Processing AtletasController#new (for 127.0.0.1 at 2009-05-03 14:19:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--7e10783a837bb8654cdcc3fd3760bd6ef27a3466
+  Parameters: {"action"=>"new", "controller"=>"atletas"}
+  [4;36;1mAtleta Columns (0.000418)[0m   [0;1mSHOW FIELDS FROM `atletas`[0m
+Rendering template within layouts/atletas
+Rendering atletas/new
+Completed in 0.22738 (4 reqs/sec) | Rendering: 0.20609 (90%) | DB: 0.00042 (0%) | 200 OK [http://localhost/atletas/new]
+
+
+Processing AtletasController#create (for 127.0.0.1 at 2009-05-03 14:20:48) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjc2ZDVjNjM5MWQyY2I4N2VlMDYyYzYwYmZjN2Ex
+Y2EiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--effed76661b917b44992f8037cf458de91d02aca
+  Parameters: {"commit"=>"Create", "atleta"=>{"nome"=>"Mauricio de Amorim", "data_nasc(1i)"=>"2004", "cpf"=>"1234567890", "data_nasc(2i)"=>"5", "data_nasc(3i)"=>"3", "data_nasc(4i)"=>"17", "data_nasc(5i)"=>"19", "notas"=>"Primeiro teste.", "celular"=>"1234-5678"}, "authenticity_token"=>"54e51cf6d669bc33d59239219d44f87e122f67f1", "action"=>"create", "controller"=>"atletas"}
+  [4;35;1mAtleta Columns (0.000148)[0m   [0mSHOW FIELDS FROM `atletas`[0m
+  [4;36;1mSQL (0.000029)[0m   [0;1mBEGIN[0m
+  [4;35;1mAtleta Create (0.000483)[0m   [0mINSERT INTO `atletas` (`created_at`, `data_nasc`, `nome`, `cpf`, `updated_at`, `notas`, `celular`) VALUES('2009-05-03 17:20:48', '2004-05-03 17:19:00', 'Mauricio de Amorim', '1234567890', '2009-05-03 17:20:48', 'Primeiro teste.', '1234-5678')[0m
+  [4;36;1mSQL (0.003976)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/atletas/1
+Completed in 0.02395 (41 reqs/sec) | DB: 0.00464 (19%) | 302 Found [http://localhost/atletas]
+
+
+Processing AtletasController#show (for 127.0.0.1 at 2009-05-03 14:20:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjc2ZDVjNjM5MWQyY2I4N2VlMDYyYzYwYmZjN2Ex
+Y2EiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVBdGxldGEgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk
+LgY6CkB1c2VkewY7B0Y=--4cd6dca9ba2ee736ec90f03c4f2c6a7eb19e1e94
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"atletas"}
+  [4;35;1mAtleta Columns (0.000153)[0m   [0mSHOW FIELDS FROM `atletas`[0m
+  [4;36;1mAtleta Load (0.002008)[0m   [0;1mSELECT * FROM `atletas` WHERE (`atletas`.`id` = 1) [0m
+Rendering template within layouts/atletas
+Rendering atletas/show
+Completed in 0.01501 (66 reqs/sec) | Rendering: 0.00573 (38%) | DB: 0.00216 (14%) | 200 OK [http://localhost/atletas/1]
+
+
+Processing AtletasController#index (for 127.0.0.1 at 2009-05-03 14:20:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjc2ZDVjNjM5MWQyY2I4N2VlMDYyYzYwYmZjN2Ex
+Y2EiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVBdGxldGEgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk
+LgY6CkB1c2VkewY7B1Q=--7fd9143cc866913a88d4e32638cf02d10738ce03
+  Parameters: {"action"=>"index", "controller"=>"atletas"}
+  [4;35;1mAtleta Load (0.001541)[0m   [0mSELECT * FROM `atletas` [0m
+Rendering template within layouts/atletas
+Rendering atletas/index
+  [4;36;1mAtleta Columns (0.001095)[0m   [0;1mSHOW FIELDS FROM `atletas`[0m
+Completed in 0.01199 (83 reqs/sec) | Rendering: 0.00294 (24%) | DB: 0.00264 (21%) | 200 OK [http://localhost/atletas]
+
+
+Processing AtletasController#show (for 127.0.0.1 at 2009-05-03 14:49:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjc2ZDVjNjM5MWQyY2I4N2VlMDYyYzYwYmZjN2Ex
+Y2EiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--effed76661b917b44992f8037cf458de91d02aca
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"atletas"}
+  [4;35;1mAtleta Columns (0.009219)[0m   [0mSHOW FIELDS FROM `atletas`[0m
+  [4;36;1mAtleta Load (0.000010)[0m   [0;1mSELECT * FROM `atletas` WHERE (`atletas`.`id` = 1) [0m
+Rendering template within layouts/atletas
+Rendering atletas/show
+Completed in 0.02736 (36 reqs/sec) | Rendering: 0.01270 (46%) | DB: 0.00923 (33%) | 200 OK [http://localhost/atletas/1]
+
+
+Processing AtletasController#index (for 127.0.0.1 at 2009-05-03 14:49:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjc2ZDVjNjM5MWQyY2I4N2VlMDYyYzYwYmZjN2Ex
+Y2EiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--effed76661b917b44992f8037cf458de91d02aca
+  Parameters: {"action"=>"index", "controller"=>"atletas"}
+  [4;35;1mAtleta Load (0.000434)[0m   [0mSELECT * FROM `atletas` [0m
+Rendering template within layouts/atletas
+Rendering atletas/index
+  [4;36;1mAtleta Columns (0.000884)[0m   [0;1mSHOW FIELDS FROM `atletas`[0m
+Completed in 0.01198 (83 reqs/sec) | Rendering: 0.00542 (45%) | DB: 0.00132 (11%) | 200 OK [http://localhost/atletas]
+
+
+Processing ProvasController#index (for 127.0.0.1 at 2009-05-03 14:50:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjc2ZDVjNjM5MWQyY2I4N2VlMDYyYzYwYmZjN2Ex
+Y2EiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--effed76661b917b44992f8037cf458de91d02aca
+  Parameters: {"action"=>"index", "controller"=>"provas"}
+  [4;35;1mProva Load (0.000004)[0m   [0mSELECT * FROM `provas` [0m
+Rendering template within layouts/provas
+Rendering provas/index
+Completed in 0.02819 (35 reqs/sec) | Rendering: 0.00740 (26%) | DB: 0.00000 (0%) | 200 OK [http://localhost/provas]
+
+
+Processing ProvasController#new (for 127.0.0.1 at 2009-05-03 14:50:26) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjc2ZDVjNjM5MWQyY2I4N2VlMDYyYzYwYmZjN2Ex
+Y2EiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--effed76661b917b44992f8037cf458de91d02aca
+  Parameters: {"action"=>"new", "controller"=>"provas"}
+  [4;36;1mProva Columns (0.003213)[0m   [0;1mSHOW FIELDS FROM `provas`[0m
+Rendering template within layouts/provas
+Rendering provas/new
+Completed in 0.05261 (19 reqs/sec) | Rendering: 0.03625 (68%) | DB: 0.00321 (6%) | 200 OK [http://localhost/provas/new]
+
+
+Processing ProvasController#index (for 127.0.0.1 at 2009-05-03 14:50:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjc2ZDVjNjM5MWQyY2I4N2VlMDYyYzYwYmZjN2Ex
+Y2EiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--effed76661b917b44992f8037cf458de91d02aca
+  Parameters: {"action"=>"index", "controller"=>"provas"}
+  [4;35;1mProva Load (0.000000)[0m   [0mSELECT * FROM `provas` [0m
+Rendering template within layouts/provas
+Rendering provas/index
+Completed in 0.02386 (41 reqs/sec) | Rendering: 0.01951 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/provas]
