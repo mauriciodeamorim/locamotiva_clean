@@ -1,0 +1,6 @@
+Próximas tarefas
+
+Definir os relacionamentos;
+Escrever as classes de controle; (Capitulo 6)
+Verificar paginacao;
+
