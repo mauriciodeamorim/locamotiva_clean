@@ -1,6 +1,8 @@
 Próximas tarefas
 
-Definir os relacionamentos;
+Definir os relacionamentos;ok
+  Atletas 1 para * Resultados
+  Prova 1 para * Resultados
 Escrever as classes de controle; (Capitulo 6)
 Verificar paginacao;
 
