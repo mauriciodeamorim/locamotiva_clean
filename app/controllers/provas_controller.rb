@@ -82,4 +82,15 @@ class ProvasController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  # Mostra a última prova
+  def showLast
+    @prova = Prova.find(:last)
+
+    respond_to do |format|
+      format.html # showLast.html.erb
+      format.xml  { render :xml => @prova }
+    end
+  end
 end
+
