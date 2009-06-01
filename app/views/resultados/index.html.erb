@@ -49,7 +49,7 @@
       <tr>
         <td><%=h competition.id %></td>
         <td> --- </td>
-        <td><%= link_to competition.nome, competition %></td>
+        <td><%= link_to competition.nome, "resultados/show/#{competition.id}" %></td>
         <td><%=h competition.etapa %></td>
         <td><%=h competition.data %></td>
         <td><%=h competition.local %></td>
@@ -58,5 +58,7 @@
       </tr>
     <% end %>
     </table>
+    <div><%= list_of_results(2) %></div>
+
 </div>
 

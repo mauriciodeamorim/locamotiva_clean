@@ -31,6 +31,15 @@ class ResultadosController < ApplicationController
   end
 
   def show
+    #@prova = Prova.find(params[:id])
+    @prova = Resultado.find(:all, :conditions => ["idProva = #{params[:id]}"])
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @prova }
+    end
+  end
+
+  def show_nnn
     @all_results = Resultado.find(:all, :conditions => ["idProva = #{params[:id]}"])
 #    @prova = Prova.find(params[:id])
 

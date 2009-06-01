@@ -7,6 +7,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.connect 'last', :controller => 'provas', :action => 'showLast'
   map.connect 'lastR', :controller => 'resultados', :action => 'index'
+  #map.connect 'show/:id', :controller => 'resultados', :action => 'show'
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

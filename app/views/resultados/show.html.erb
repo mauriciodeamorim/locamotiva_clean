@@ -1,6 +1,8 @@
-Resultados por prova
+Resultados para prova
+<% for prova in @prova %>
 <p>
   <b>Nome:</b>
-  <%=h @all_results[0].nome %>
+  <%=h prova.nome %>
 </p>
+<% end %>
 
