@@ -18,6 +18,7 @@
     <td><%=h prova.local %></td>
     <td><%=h prova.url %></td>
     <td><%=h prova.distancia %></td>
+    <td><%= link_to 'Results', resultado_path(prova.id) %></td>
     <td><%= link_to 'Show', prova %></td>
     <td><%= link_to 'Edit', edit_prova_path(prova) %></td>
     <td><%= link_to 'Destroy', prova, :confirm => 'Are you sure?', :method => :delete %></td>

@@ -2,6 +2,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :provas
 
   map.resources :atletas
+  map.resources :resultados
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 

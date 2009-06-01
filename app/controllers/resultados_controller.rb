@@ -32,10 +32,10 @@ class ResultadosController < ApplicationController
 
   def show
     #@prova = Prova.find(params[:id])
-    @prova = Resultado.find(:all, :conditions => ["idProva = #{params[:id]}"])
+    @results_per_competition = Resultado.find(:all, :conditions => ["idProva = #{params[:id]}"])
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @prova }
+      format.xml  { render :xml => @results_per_competition }
     end
   end
 

@@ -1,18 +1,36 @@
 <!index de resultado>
-<h1 style="color: yellow">Provas</h1>
+<h1 style="color: yellow">xxx</h1>
 
+  <tr style="color: blue">
+  <td>Data: <%=h @results_per_competition.prova.data %></td>
+    <td>Nome: <%=h @results_per_competition.prova.nome %></td>
+    <td>Extensão: <%=h @results_per_competition.prova.distancia %></td>
+  </tr>
+
+
+Resultados para prova
+<% for prova in @prova %>
+<p>
+  <b>Nome:</b>
+  <%=h prova.nome %>
+</p>
+<% end %>
 <table>
   <tr style="color: blue">
-    <td>Data: <%=h @last_competition.data %></td>
-    <td>Nome: <%=h @last_competition.nome %></td>
-    <td>Extensão: <%=h @last_competition.distancia %></td>
+    <td><%=h @last_competition.id %></td>
+    <td> --- </td>
+    <td><%=h @last_competition.nome %></td>
+    <td><%=h @last_competition.etapa %></td>
+    <td><%=h @last_competition.data %></td>
+    <td><%=h @last_competition.local %></td>
+    <td><%=h @last_competition.url %></td>
+    <td><%=h @last_competition.distancia %></td>
   </tr>
 
   <tr>
     <td>Id</td>
     <td>Nome</td>
-    <td>Tipo</td>
-    <td>Classificação</td>
+    <td>Distância</td>
     <td>IdProva</td>
   </tr>
 
@@ -21,7 +39,7 @@
     <td><%=h r.id %></td>
     <td><%=h r.nome %></td>
     <td><%=h r.sexo %></td>
-    <td><%=h r.classGeral %></td>
+    <td><%=h r.distancia %></td>
     <td><%=h r.idProva %></td>
   </tr>
 <% end %>

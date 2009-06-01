@@ -27,6 +27,7 @@ Escrever as classes de controle; (Capitulo 6)
     criar um layout para todas as paginas; ok
     reformular como serao apresentadas as informacoes;
     passar tudo para o ingles;
+    corrigir o nome dos campos no model e BD, de CamelCase para separacao com underscore; Ex.: classGeral = class_geral
 
 
 

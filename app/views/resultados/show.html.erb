@@ -1,5 +1,27 @@
 Resultados para prova
-<% for prova in @prova %>
+
+<table>
+  <tr>
+    <td>Id</td>
+    <td>Nome</td>
+    <td>Tipo</td>
+    <td>Classificação</td>
+    <td>IdProva</td>
+  </tr>
+
+<% for r in @results_per_competition %>
+  <tr>
+    <td><%=h r.id %></td>
+    <td><%=h r.nome %></td>
+    <td><%=h r.sexo %></td>
+    <td><%=h r.classGeral %></td>
+    <td><%=h r.idProva %></td>
+  </tr>
+<% end %>
+</table>
+
+
+<% for prova in @results_per_competition %>
 <p>
   <b>Nome:</b>
   <%=h prova.nome %>
