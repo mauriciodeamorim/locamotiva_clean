@@ -12,6 +12,14 @@ pre {
   font-size: 11px;
 }
 
+.logo {
+  font-size: 20px;
+  padding: 10px;
+  margin-right: 1500px;
+  border: solid;
+  border-color: green;
+}
+
 a { color: #000; }
 a:visited { color: #666; }
 a:hover { color: #fff; background-color:#000; }

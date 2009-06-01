@@ -10,6 +10,7 @@ Escrever as classes de controle; (Capitulo 6)
     exibicao de todas as provas menos a última; ok
 
     exibicao dos resultados clicando em cada prova;
+      organizar os métodos e verificar melhor forma para exibí-los;
     criar layout para exibicao de resultados; ok
     formatar exicibição da data para dd/MMM;
     criar rota para mostrar resultados de uma prova ao invés dos detalhes da prova;
@@ -21,6 +22,11 @@ Escrever as classes de controle; (Capitulo 6)
 
   Prova
     exibicao de provas ordenadas por data, nome, local ou distancia;
+
+  Geral
+    criar um layout para todas as paginas; ok
+    reformular como serao apresentadas as informacoes;
+    passar tudo para o ingles;
 
 
 
