@@ -48,7 +48,7 @@
       <tr>
         <td><%=h ac.id %></td>
         <td> --- </td>
-        <td><%=h ac.nome %></td>
+        <td><%= link_to ac.nome, new_prova_path %></td>
         <td><%=h ac.etapa %></td>
         <td><%=h ac.data %></td>
         <td><%=h ac.local %></td>

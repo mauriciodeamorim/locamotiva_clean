@@ -4,5 +4,22 @@ Definir os relacionamentos;ok
   Atletas 1 para * Resultados
   Prova 1 para * Resultados
 Escrever as classes de controle; (Capitulo 6)
+  Resultado
+    exibicao da última prova; ok
+    exibicao dos resultados da última prova; ok
+    exibicao de todas as provas menos a última; ok
+
+    exibicao dos resultados clicando em cada prova;
+
+  Atletas
+    busca por nome de atleta;
+    busca por apelido de atleta;
+    busca por número de atleta;
+
+  Prova
+    exibicao de provas ordenadas por data, nome, local ou distancia;
+
+
+
 Verificar paginacao;
 
