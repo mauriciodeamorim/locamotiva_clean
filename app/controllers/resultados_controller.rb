@@ -1,22 +1,9 @@
 class ResultadosController < ApplicationController
   def index
-<<<<<<< HEAD:app/controllers/resultados_controller.rb
-    render :text => "Primeiro teste com controller!"
+    results_last_competition
   end
 
-  def ano
-    @ano = Atleta.find(:all)
-
-#    respond_to do |format|
-#      format.html
-#    end
-
-    render :text => @ano
-=======
-    resultadosPorProva
-  end
-
-  def resultadosPorProva
+  def last_competition
     @resultado = Resultado.new
 
     @resultado.prova = Prova.find(:last)
@@ -26,7 +13,21 @@ class ResultadosController < ApplicationController
       format.xml  { render :xml => @resultado }
     end
 #    Resultados.find([params:idProva])
->>>>>>> working:app/controllers/resultados_controller.rb
+  end
+
+  def results_last_competition
+    @results = Resultado.new
+    @last_competition = Prova.find(:last)
+    @results.prova = Prova.find(:last)
+
+    id_prova = @results.prova.id
+
+    @results = Resultado.find(:all, :conditions => ["idProva = #{id_prova}"])
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @results }
+    end
   end
 end
 
