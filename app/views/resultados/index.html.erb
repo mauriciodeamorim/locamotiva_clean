@@ -1,7 +1,8 @@
-<h1>Provas</h1>
+<!index de resultado>
+<h1 style="color: red">Provas</h1>
 
 <table>
-  <tr>
+  <tr style="color: blue">
     <td><%=h @last_competition.id %></td>
     <td> --- </td>
     <td><%=h @last_competition.nome %></td>
@@ -44,16 +45,16 @@
         <td>Distância</td>
       </tr>
 
-    <% for ac in @all_competitions %>
+    <% for competition in @all_competitions %>
       <tr>
-        <td><%=h ac.id %></td>
+        <td><%=h competition.id %></td>
         <td> --- </td>
-        <td><%= link_to ac.nome, new_prova_path %></td>
-        <td><%=h ac.etapa %></td>
-        <td><%=h ac.data %></td>
-        <td><%=h ac.local %></td>
-        <td><%=h ac.url %></td>
-        <td><%=h ac.distancia %></td>
+        <td><%= link_to competition.nome, competition %></td>
+        <td><%=h competition.etapa %></td>
+        <td><%=h competition.data %></td>
+        <td><%=h competition.local %></td>
+        <td><%=h competition.url %></td>
+        <td><%=h competition.distancia %></td>
       </tr>
     <% end %>
     </table>

@@ -10,6 +10,9 @@ Escrever as classes de controle; (Capitulo 6)
     exibicao de todas as provas menos a última; ok
 
     exibicao dos resultados clicando em cada prova;
+    criar layout para exibicao de resultados;
+    formatar exicibição da data para dd/MMM;
+    criar rota para mostrar resultados de uma prova ao invés de detalhes da prova;
 
   Atletas
     busca por nome de atleta;
