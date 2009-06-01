@@ -28,6 +28,34 @@
     <td><%=h r.idProva %></td>
   </tr>
 <% end %>
-
 </table>
+<br/>
+<br/>
+<br/>
+<div>
+    <table>
+      <tr>
+        <td>Id</td>
+        <td>Nome</td>
+        <td>Etapa</td>
+        <td>Data</td>
+        <td>Local</td>
+        <td>Url</td>
+        <td>Distância</td>
+      </tr>
+
+    <% for ac in @all_competitions %>
+      <tr>
+        <td><%=h ac.id %></td>
+        <td> --- </td>
+        <td><%=h ac.nome %></td>
+        <td><%=h ac.etapa %></td>
+        <td><%=h ac.data %></td>
+        <td><%=h ac.local %></td>
+        <td><%=h ac.url %></td>
+        <td><%=h ac.distancia %></td>
+      </tr>
+    <% end %>
+    </table>
+</div>
 
