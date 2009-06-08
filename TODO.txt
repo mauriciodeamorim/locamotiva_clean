@@ -21,12 +21,18 @@ Escrever as classes de controle; (Capitulo 6)
     busca por número de atleta;
 
   Prova
-    exibicao de provas ordenadas por data, nome, local ou distancia;
+    exibicao de provas ordenadas por data, nome ou distancia;
 
   Geral
     criar um layout para todas as paginas; ok
-    reformular como serao apresentadas as informacoes;
+    reformular como serao apresentadas as informacoes:
+      home;
+      resultados;
+      provas; ok
+      atletas;
+      busca;
     passar tudo para o ingles;
+    passar tudo para tableless;
     corrigir o nome dos campos no model e BD, de CamelCase para separacao com underscore; Ex.: classGeral = class_geral
 
 
