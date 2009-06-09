@@ -9,7 +9,7 @@ class ResultadosController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @results }
+      format.xml  { render :xml => @results_by_race }
     end
   end
 

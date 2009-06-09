@@ -2,6 +2,15 @@ class Resultado < ActiveRecord::Base
   belongs_to :atleta
   belongs_to :prova
 
+  def self.results_by_race(id)
+    #verify_last_or_other(id)
+    results_by_race = Resultado.find(:all, :conditions => ["idProva = #{id}"])
+
+    results_by_race.each  do |item|
+      item.atleta  = Atleta.find(item.idAtleta)
+    end
+  end
+
   def self.verify_last_or_other(id)
       if id == nil
         Prova.find(:last)
@@ -10,15 +19,7 @@ class Resultado < ActiveRecord::Base
       end
   end
 
-  def self.results_by_race(id)
-    results_by_race = Resultado.find(:all, :conditions => ["idProva = #{id}"])
-
-    results_by_race.each  do |item|
-      item.atleta  = Atleta.find(item.idAtleta)
-    end
-  end
-
-#not use
+#not used
   def self.all_races_less_last
     @all_race_without_last = Prova.find(:all, :conditions => ["id != #{last_race().id}"], :order => "data DESC")
   end
