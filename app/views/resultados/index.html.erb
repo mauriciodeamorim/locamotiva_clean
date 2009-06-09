@@ -1,13 +1,13 @@
 <!index de resultado>
-<h1 style="color: yellow">Provas</h1>
-
 <table>
-  <tr style="color: blue">
-    <td>Data: <%=h @last_competition.data %></td>
-    <td>Nome: <%=h @last_competition.nome %></td>
-    <td>Extensão: <%=h @last_competition.distancia %></td>
+  <tr>
+    <td class='data'>
+        <div style="text-align:center;"><%= @last_competition.data.strftime('%d') %></div>
+        <div style="text-align:center;"><%= @last_competition.data.strftime('%B') %></div>
+    </td>
+    <td class="prova"><%=h @last_competition.nome %></td>
+    <td class="prova"><%=h @last_competition.distancia %></td>
   </tr>
-
   <tr>
     <td>Id</td>
     <td>Nome</td>

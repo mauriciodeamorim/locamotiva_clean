@@ -3,9 +3,11 @@ Próximas tarefas
 Definir os relacionamentos;ok
   Atletas 1 para * Resultados
   Prova 1 para * Resultados
+
 Escrever as classes de controle; (Capitulo 6)
   Resultado
     exibicao da última prova; ok
+      refazer com css e colocar em div;
     exibicao dos resultados da última prova; ok
     exibicao de todas as provas menos a última; ok
 
