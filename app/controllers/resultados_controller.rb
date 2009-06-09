@@ -5,13 +5,7 @@ class ResultadosController < ApplicationController
 
   def results_last_race
     @race = Resultado.verify_last_or_other(params[:id])
-    @results_by_race = Resultado.find(:all, :conditions => ["idProva = #{@race.id}"])
-
-    @all_races = Resultado.competitions_except_last(@race.id)
-
-    @results_by_race.each  do |item|
-      item.atleta  = Atleta.find(item.idAtleta)
-    end
+    @results_by_race = Resultado.results_by_race(@race.id)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -20,11 +14,17 @@ class ResultadosController < ApplicationController
   end
 
   def show
-    @results_per_race = Resultado.find(:all, :conditions => ["idProva = #{params[:id]}"])
+    @race = Resultado.verify_last_or_other(params[:id])
+    @results_by_race = Resultado.results_by_race(@race.id)
+
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @results_per_race }
+      format.xml  { render :xml => @results_by_race }
     end
+  end
+
+  def all_races
+    @all_races = Resultado.competitions_except_last(@race.id)
   end
 end
 

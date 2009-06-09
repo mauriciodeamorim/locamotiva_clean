@@ -27,29 +27,3 @@
 <% end %>
 </table>
 
-<!--only test -->
-    <table>
-      <tr>
-        <td>Id</td>
-        <td>Nome</td>
-        <td>Etapa</td>
-        <td>Data</td>
-        <td>Local</td>
-        <td>Url</td>
-        <td>Distância</td>
-      </tr>
-
-    <% for race in @all_races %>
-      <tr>
-        <td><%=h race.id %></td>
-        <td> --- </td>
-        <td><%= link_to race.nome, "resultados/show/#{race.id}" %></td>
-        <td><%=h race.etapa %></td>
-        <td><%=h race.data %></td>
-        <td><%=h race.local %></td>
-        <td><%=h race.url %></td>
-        <td><%=h race.distancia %></td>
-      </tr>
-    <% end %>
-    </table>
-
