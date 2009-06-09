@@ -1,60 +1,29 @@
 <!index de resultado>
-<table>
-  <tr>
-    <td class='data'>
-        <div style="text-align:center;"><%= @last_competition.data.strftime('%d') %></div>
+<div>
+    <div class='data' style="float:left">
+        <div style="text-align:center;float:none;"><%= @last_competition.data.strftime('%d') %></div>
         <div style="text-align:center;"><%= @last_competition.data.strftime('%B') %></div>
-    </td>
-    <td class="prova"><%=h @last_competition.nome %></td>
-    <td class="prova"><%=h @last_competition.distancia %></td>
-  </tr>
+    </div>
+    <div class="prova" style="float:left"><%=h @last_competition.nome %></div>
+    <div class="prova" style="float:left"><%=h @last_competition.distancia %></div>
+</div>
+<table style="clear:both; padding-top:20px;">
   <tr>
-    <td>Id</td>
-    <td>Nome</td>
-    <td>Tipo</td>
+    <td>Numero de peito</td>
+    <td>Atleta</td>
+    <td>Tempo oficial</td>
+    <td>Tempo líquido</td>
     <td>Classificação</td>
-    <td>IdProva</td>
   </tr>
 
 <% for r in @results %>
   <tr>
-    <td><%=h r.id %></td>
     <td><%=h r.nome %></td>
-    <td><%=h r.sexo %></td>
+    <td><%=h r.atleta.nome %></td>
+    <td><%=h r.tempoOficial.strftime("%H:%M:%S") %></td>
+    <td><%=h r.tempoLiquido.strftime("%H:%M:%S") %></td>
     <td><%=h r.classGeral %></td>
-    <td><%=h r.idProva %></td>
   </tr>
 <% end %>
 </table>
-<br/>
-<br/>
-<br/>
-<div>
-    <table>
-      <tr>
-        <td>Id</td>
-        <td>Nome</td>
-        <td>Etapa</td>
-        <td>Data</td>
-        <td>Local</td>
-        <td>Url</td>
-        <td>Distância</td>
-      </tr>
-
-    <% for competition in @all_competitions %>
-      <tr>
-        <td><%=h competition.id %></td>
-        <td> --- </td>
-        <td><%= link_to competition.nome, "resultados/show/#{competition.id}" %></td>
-        <td><%=h competition.etapa %></td>
-        <td><%=h competition.data %></td>
-        <td><%=h competition.local %></td>
-        <td><%=h competition.url %></td>
-        <td><%=h competition.distancia %></td>
-      </tr>
-    <% end %>
-    </table>
-    <div><%= list_of_results(2) %></div>
-
-</div>
 

@@ -19,6 +19,10 @@ class ResultadosController < ApplicationController
     @results = Resultado.find(:all, :conditions => ["idProva = #{@last_competition.id}"])
     @all_competitions = all_competitions_less_last
 
+    @results.each  do |item|
+      item.atleta  = Atleta.find(item.idAtleta)
+    end
+
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @results }
