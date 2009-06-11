@@ -3,7 +3,39 @@ Próximas tarefas
 Definir os relacionamentos;ok
   Atletas 1 para * Resultados
   Prova 1 para * Resultados
+
 Escrever as classes de controle; (Capitulo 6)
+  Resultado
+    exibicao da última prova; ok
+      refazer com css e colocar em div;
+    exibicao dos resultados da última prova; ok
+    exibicao de todas as provas menos a última; ok
+
+    exibicao dos resultados clicando em cada prova;
+      organizar os métodos e verificar melhor forma para exibí-los;
+    criar layout para exibicao de resultados; ok
+    formatar exicibição da data para dd/MMM;
+    criar rota para mostrar resultados de uma prova ao invés dos detalhes da prova;
+
+  Atletas
+    busca por nome de atleta;
+    busca por apelido de atleta;
+    busca por número de atleta;
+
+  Prova
+    exibicao de provas ordenadas por data, nome ou distancia;
+
+  Geral
+    criar um layout para todas as paginas; ok
+    reformular como serao apresentadas as informacoes:
+      home;
+      resultados;
+      provas; ok
+      atletas;
+      busca;
+    passar tudo para o ingles;
+    passar tudo para tableless;
+    corrigir o nome dos campos no model e BD, de CamelCase para separacao com underscore; Ex.: classGeral = class_geral
 
 Verificar paginacao;
 

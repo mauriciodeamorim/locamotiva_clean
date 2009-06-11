@@ -2,6 +2,13 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :provas
 
   map.resources :atletas
+  map.resources :resultados
+  map.connect ':controller/:action/:id'
+  map.connect ':controller/:action/:id.:format'
+
+  map.connect 'last', :controller => 'provas', :action => 'showLast'
+  map.connect 'lastR', :controller => 'resultados', :action => 'index'
+  #map.connect 'show/:id', :controller => 'resultados', :action => 'show'
 
   # The priority is based upon order of creation: first created -> highest priority.
 
@@ -21,7 +28,7 @@ ActionController::Routing::Routes.draw do |map|
 
   # Sample resource route with sub-resources:
   #   map.resources :products, :has_many => [ :comments, :sales ], :has_one => :seller
-  
+
   # Sample resource route with more complex sub-resources
   #   map.resources :products do |products|
   #     products.resources :comments
@@ -42,6 +49,5 @@ ActionController::Routing::Routes.draw do |map|
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing the them or commenting them out if you're using named routes and resources.
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
 end
+

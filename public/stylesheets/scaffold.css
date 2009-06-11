@@ -12,6 +12,27 @@ pre {
   font-size: 11px;
 }
 
+.logo {
+  font-size: 20px;
+  padding: 10px;
+  border: solid;
+  border-color: green;
+  float: left;
+}
+
+.data {
+  font-size: 20px;
+  padding: 5px;
+  border: solid;
+  border-color: blue;
+}
+
+.prova {
+  font-size: 20px;
+  padding: 10px;
+  color: gray;
+}
+
 a { color: #000; }
 a:visited { color: #666; }
 a:hover { color: #fff; background-color:#000; }

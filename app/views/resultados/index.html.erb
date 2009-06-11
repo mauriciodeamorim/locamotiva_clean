@@ -1,0 +1,29 @@
+<!index de resultado>
+<div>
+    <div class='data' style="float:left">
+        <div style="text-align:center;float:none;"><%= @last_competition.data.strftime('%d') %></div>
+        <div style="text-align:center;"><%= @last_competition.data.strftime('%B') %></div>
+    </div>
+    <div class="prova" style="float:left"><%=h @last_competition.nome %></div>
+    <div class="prova" style="float:left"><%=h @last_competition.distancia %></div>
+</div>
+<table style="clear:both; padding-top:20px;">
+  <tr>
+    <td>Numero de peito</td>
+    <td>Atleta</td>
+    <td>Tempo oficial</td>
+    <td>Tempo líquido</td>
+    <td>Classificação</td>
+  </tr>
+
+<% for r in @results %>
+  <tr>
+    <td><%=h r.nome %></td>
+    <td><%=h r.atleta.nome %></td>
+    <td><%=h r.tempoOficial.strftime("%H:%M:%S") %></td>
+    <td><%=h r.tempoLiquido.strftime("%H:%M:%S") %></td>
+    <td><%=h r.classGeral %></td>
+  </tr>
+<% end %>
+</table>
+
