@@ -17,21 +17,19 @@ class ResultadosController < ApplicationController
       end
 
     @results = Resultado.find(:all, :conditions => ["idProva = #{@last_competition.id}"])
-    @all_competitions = all_competitions_less_last
+    @all_competitions = @all_competition_without_last
+    #Resultado.all_competitions_less_last()
 
     @results.each  do |item|
       item.atleta  = Atleta.find(item.idAtleta)
     end
 
+    @meu_nome = Resultado.new.tras()
+
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @results }
     end
-  end
-
-  def all_competitions_less_last
-    Prova.find(:all, :conditions => ["id != #{last_competition().id}"], :order => "data DESC")
-#    Resultados.find([params:idProva])
   end
 
   def show
@@ -40,16 +38,6 @@ class ResultadosController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @results_per_competition }
-    end
-  end
-
-  def show_nnn
-    @all_results = Resultado.find(:all, :conditions => ["idProva = #{params[:id]}"])
-#    @prova = Prova.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @all_results }
     end
   end
 end
