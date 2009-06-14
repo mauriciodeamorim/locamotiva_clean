@@ -14,8 +14,8 @@ Escrever as classes de controle; (Capitulo 6)
     exibicao dos resultados clicando em cada prova;
       organizar os métodos e verificar melhor forma para exibí-los;
     criar layout para exibicao de resultados; ok
-    formatar exicibição da data para dd/MMM;
-    criar rota para mostrar resultados de uma prova ao invés dos detalhes da prova;
+    formatar exibicao da data para dd/MMM; ok
+    criar rota para mostrar resultados de uma prova ao invés dos detalhes da prova; ok
 
   Atletas
     busca por nome de atleta;
@@ -33,9 +33,16 @@ Escrever as classes de controle; (Capitulo 6)
       provas; ok
       atletas;
       busca;
+      links;
     passar tudo para o ingles;
     passar tudo para tableless;
     corrigir o nome dos campos no model e BD, de CamelCase para separacao com underscore; Ex.: classGeral = class_geral
+    mapear a rota inicial para exibir o ultimo resultado; ok
+    publicar em producao;
+    fazer o layout;
+    programar o css;
+
+
 
 Verificar paginacao;
 

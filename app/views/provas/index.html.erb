@@ -3,7 +3,7 @@
   <tr>
     <td class='data'>
         <div style="text-align:center;"><%= prova.data.strftime('%d') %></div>
-        <div style="text-align:center;"><%= prova.data.strftime('%B') %></div>
+        <div style="text-align:center;"><%= prova.data.strftime('%b') %></div>
     </td>
     <td class="prova"><%= link_to prova.nome, resultado_path(prova.id) %></td>
     <td class="prova"><%=h prova.distancia %></td>

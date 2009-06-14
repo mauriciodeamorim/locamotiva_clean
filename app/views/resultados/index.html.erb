@@ -2,7 +2,7 @@
 <div>
     <div class='data' style="float:left">
         <div style="text-align:center;float:none;"><%= @last_competition.data.strftime('%d') %></div>
-        <div style="text-align:center;"><%= @last_competition.data.strftime('%B') %></div>
+        <div style="text-align:center;"><%= @last_competition.data.strftime('%b') %></div>
     </div>
     <div class="prova" style="float:left"><%=h @last_competition.nome %></div>
     <div class="prova" style="float:left"><%=h @last_competition.distancia %></div>
@@ -33,4 +33,30 @@
   </tr>
 <% end %>
 </table>
+
+<!--only test -->
+    <table>
+      <tr>
+        <td>Id</td>
+        <td>Nome</td>
+        <td>Etapa</td>
+        <td>Data</td>
+        <td>Local</td>
+        <td>Url</td>
+        <td>Distância</td>
+      </tr>
+
+    <% for competition in @all_competitions %>
+      <tr>
+        <td><%=h competition.id %></td>
+        <td> --- </td>
+        <td><%= link_to competition.nome, "resultados/show/#{competition.id}" %></td>
+        <td><%=h competition.etapa %></td>
+        <td><%=h competition.data %></td>
+        <td><%=h competition.local %></td>
+        <td><%=h competition.url %></td>
+        <td><%=h competition.distancia %></td>
+      </tr>
+    <% end %>
+    </table>
 

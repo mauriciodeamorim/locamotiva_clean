@@ -1,11 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :provas
-
   map.resources :atletas
   map.resources :resultados
+
+  map.connect '', :controller => 'resultados'
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
-
   map.connect 'last', :controller => 'provas', :action => 'showLast'
   map.connect 'lastR', :controller => 'resultados', :action => 'index'
   #map.connect 'show/:id', :controller => 'resultados', :action => 'show'

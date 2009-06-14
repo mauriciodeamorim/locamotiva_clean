@@ -36,11 +36,14 @@ end
 #    end
 #  end
 
-  def all_competitions_less_last
+  def self.all_competitions_less_last
     @all_competition_without_last = Prova.find(:all, :conditions => ["id != #{last_competition().id}"], :order => "data DESC")
 #    Resultados.find([params:idProva])
   end
 
+  def self.competitions_less_last(id)
+    Prova.find(:all, :conditions => ["id != #{id}"], :order => "data DESC")
+  end
 #  def show
 #    #@prova = Prova.find(params[:id])
 #    @results_per_competition = Resultado.find(:all, :conditions => ["idProva = #{params[:id]}"])

@@ -3,22 +3,17 @@ class ResultadosController < ApplicationController
     results_last_competition
   end
 
-  def last_competition
-    Prova.find(:last)
-  end
-
   def results_last_competition
-    #@last_competition = Prova.find(:last)
       if params[:id] == nil
-        @last_competition = last_competition()
-#        @last_competition = Prova.find(2)
+        @last_competition = Prova.find(:last)
       else
         @last_competition = Prova.find(params[:id])
       end
 
     @results = Resultado.find(:all, :conditions => ["idProva = #{@last_competition.id}"])
-    @all_competitions = @all_competition_without_last
+    @all_competitions = Resultado.competitions_less_last(@last_competition.id)
     #Resultado.all_competitions_less_last()
+    #@all_competition_without_last
 
     @results.each  do |item|
       item.atleta  = Atleta.find(item.idAtleta)
