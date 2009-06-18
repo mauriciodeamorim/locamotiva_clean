@@ -14,6 +14,12 @@ class ResultadosController < ApplicationController
   end
 
   def show
+#    @results = Resultado.new
+#    @results.prova = Resultado.verify_last_or_other(params[:id])
+#    @results.resultado = Resultado.results_by_race(@results.prova.id)
+
+#    @race = @results.prova
+#    @results_by_race = @results.resultado
     @race = Resultado.verify_last_or_other(params[:id])
     @results_by_race = Resultado.results_by_race(@race.id)
 
