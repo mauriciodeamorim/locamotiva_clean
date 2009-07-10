@@ -17,7 +17,7 @@
 development:
   adapter: mysql
   encoding: utf8
-  database: clean_loca_development
+  database: locamotiva_development
   username: root
   password:
   socket: /var/run/mysqld/mysqld.sock
@@ -28,7 +28,7 @@ development:
 test:
   adapter: mysql
   encoding: utf8
-  database: clean_loca_test
+  database: locamotiva_test
   username: root
   password:
   socket: /var/run/mysqld/mysqld.sock
@@ -36,7 +36,8 @@ test:
 production:
   adapter: mysql
   encoding: utf8
-  database: clean_loca_production
+  database: locamotiva_production
   username: root
-  password: 
+  password:
   socket: /var/run/mysqld/mysqld.sock
+
