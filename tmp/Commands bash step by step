@@ -192,4 +192,65 @@ Created commit 9dd1285: Change databases name and generate rspec files.
  create mode 100644 spec/spec_helper.rb
 amorim@amorim:~/projetos/dev/clean_loca$
 amorim@amorim:~/projetos/dev/clean_loca$ rake db:create:all
+amorim@amorim:~/projetos/dev/clean_loca$ script/generate rspec_model Race
+name:string stage:string date:datetime place:string distance:string url:string
+:0:Warning: Gem::SourceIndex#search support for Regexp patterns is deprecated
+      exists  app/models/
+      create  spec/models/
+      create  spec/fixtures/
+:0:Warning: Gem::SourceIndex#search support for Regexp patterns is deprecated
+      create  app/models/race.rb
+      create  spec/models/race_spec.rb
+      create  spec/fixtures/races.yml
+      create  db/migrate
+      create  db/migrate/20090710012938_create_races.rb
+amorim@amorim:~/projetos/dev/clean_loca$ git add .
+amorim@amorim:~/projetos/dev/clean_loca$ git commit -a -m "Create databases and rspec_model Race."
+Created commit 63ad850: Create databases and rspec_model Race.
+ 6 files changed, 171 insertions(+), 0 deletions(-)
+ create mode 100644 app/models/race.rb
+ create mode 100644 db/migrate/20090710012938_create_races.rb
+ create mode 100644 spec/fixtures/races.yml
+ create mode 100644 spec/models/race_spec.rb
+ amorim@amorim:~/projetos/dev/clean_loca$ rake db:migrate
+(in /home/amorim/projetos/dev/clean_loca)
+== 20090710012938 CreateRaces: migrating ======================================
+-- create_table(:races)
+   -> 0.0050s
+== 20090710012938 CreateRaces: migrated (0.0051s) =============================
+amorim@amorim:~/projetos/dev/clean_loca$ rake spec
+(in /home/amorim/projetos/dev/clean_loca)
+
+Race
+- should create a new instance given valid attributes
+- should be not valid when empty
+- should require Name
+- should require Date
+- should require Distance
+- should not valid if name greater than 150 characters
+
+Finished in 0.113745 seconds
+
+6 examples, 0 failures
+amorim@amorim:~/projetos/dev/clean_loca$ git status
+# On branch working
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#
+#       modified:   app/models/race.rb
+#       modified:   config/database.yml
+#       modified:   log/development.log
+#       modified:   log/test.log
+#       modified:   spec/fixtures/races.yml
+#       modified:   spec/models/race_spec.rb
+#       modified:   spec/spec.opts
+#       modified:   tmp/Commands bash step by step
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       db/schema.rb
+no changes added to commit (use "git add" and/or "git commit -a")
+amorim@amorim:~/projetos/dev/clean_loca$ git add .
+amorim@amorim:~/projetos/dev/clean_loca$ git commit -a -m "Included rspec test for Race."
 

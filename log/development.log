@@ -4,3 +4,694 @@
   [4;35;1mSQL (0.000231)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
   [4;36;1mSQL (0.000223)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.000001)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001625)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000150)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.017459)[0m   [0;1mCREATE DATABASE `loca_runner_production` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.000187)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.001185)[0m   [0mCREATE DATABASE `loca_runner_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000030)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000003)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.002571)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000191)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000403)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.019412)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.011859)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRaces (20090710012938)
+  [4;35;1mSQL (0.004693)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.001413)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090710012938')[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.011816)[0m   [0;1mSHOW FIELDS FROM `races`[0m
+  [4;35;1mSQL (0.000046)[0m   [0mdescribe `races`[0m
+  [4;36;1mSQL (0.000006)[0m   [0;1mSHOW KEYS FROM `races`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000048)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000388)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000513)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.006292)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.007162)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.008481)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.005295)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001175)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001047)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.018055)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001485)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.008626)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.001941)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.007742)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005187)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.011297)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.002737)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000415)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000084)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000022)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000006)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.022119)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.001234)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000002)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.011754)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000278)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.014404)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000007)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.001455)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000046)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000011)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000005)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.001372)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.015204)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.003783)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000314)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000106)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000078)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.004855)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000908)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.006411)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002554)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000003)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.002114)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.003581)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.003112)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000849)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000053)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.009961)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000032)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000007)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000001)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.007032)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000400)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000303)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.013610)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000217)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000120)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001876)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000271)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.008209)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000069)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.022765)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000258)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001493)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.010098)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000155)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000067)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.009173)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000409)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.040946)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.017045)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.007590)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.006758)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.010407)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000952)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000255)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001433)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.006139)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.002486)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000114)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000028)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000473)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.038519)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000382)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.007440)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003200)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000460)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.003792)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000316)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000032)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.008755)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000067)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.014384)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.004734)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003775)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001210)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.001936)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.003487)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.039964)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000204)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001887)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.005958)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.009881)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.010791)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000184)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.006505)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000001)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000071)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.020320)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000034)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.004990)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.009296)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.012648)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000254)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001255)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000031)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000196)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000862)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.011262)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.001166)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000165)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000030)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.008893)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000057)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.003801)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.006587)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.001158)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000019)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.003684)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000768)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.020758)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.001426)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000110)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000401)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.010217)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.004482)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.006108)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.001118)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.002546)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000417)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000062)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.016292)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000107)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000105)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000247)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.017236)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.012031)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000923)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.001262)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000141)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.001946)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000276)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000097)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.006871)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.012195)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000008)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002607)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.004877)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000085)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000978)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000178)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.010086)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.005599)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000317)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.013038)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000022)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002035)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003707)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.011398)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000738)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001218)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000020)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.008022)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000002)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000001)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000339)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.012443)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.008622)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000401)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000449)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000017)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000096)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000037)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001192)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000113)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.018356)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000337)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000100)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000423)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.016492)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002465)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.004868)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003945)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.001299)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000009)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000003)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001451)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000175)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.002562)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.010313)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.001103)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001573)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.008290)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.001104)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.004926)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002370)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000161)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000080)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000396)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.037963)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000016)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.022027)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.001147)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.006861)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005560)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000664)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.016597)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000294)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.022447)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000005)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001379)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.013091)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000314)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000014)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001305)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.030827)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000879)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000008)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.008290)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.003270)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.007153)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.002134)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001073)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000966)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000783)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000017)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000502)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000189)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.009776)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000007)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.012471)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000240)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.008727)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.008300)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000424)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000139)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000629)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.001201)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.024975)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.001295)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.002320)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.005447)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.017429)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.001310)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.007936)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000290)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000454)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.022406)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.005445)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.006970)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.001706)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000056)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000618)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000342)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000166)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000128)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.011255)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000275)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000053)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.003174)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.006264)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.021775)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.010106)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000574)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.002035)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000042)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000405)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000020)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000006)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.013724)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000126)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.013624)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000001)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000833)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002967)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002319)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000148)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.015205)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.017574)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000436)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.003218)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.008277)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.001358)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.003387)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000007)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000001)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.005838)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.017242)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002236)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002387)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.004319)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.002298)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000928)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000013)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000006)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000002)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000001)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.015517)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000318)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.015653)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.006942)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.008171)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000369)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000668)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.001593)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.001061)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000011)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.017697)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.019223)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.004796)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003561)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.001151)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.022836)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000647)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000025)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.005657)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002112)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.012050)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.001450)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000605)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.006103)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000026)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.009312)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002018)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.009644)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000001)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000693)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000085)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000415)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000165)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001499)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000181)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.011129)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000746)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.008620)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000304)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.005714)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.004470)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000019)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001404)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.002000)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000087)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000053)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.023754)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000303)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000051)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000246)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.010153)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000694)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.004578)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.002540)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.001006)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000656)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000764)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.011419)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000384)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.014254)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.050047)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.011175)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000347)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000653)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000374)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
+  [4;36;1mSQL (0.000522)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000004)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000001)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.005736)[0m   [0;1mDROP DATABASE IF EXISTS `loca_runner_test`[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCREATE DATABASE `loca_runner_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.002618)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.010975)[0m   [0mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `stage` varchar(255), `date` datetime, `place` varchar(255), `distance` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000377)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.006832)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005814)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.007400)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.012530)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090710012938')[0m
