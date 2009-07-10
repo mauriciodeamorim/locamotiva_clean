@@ -1,0 +1,25 @@
+Locamotiva in Rails version
+
+Project about results of the Locamotiva runners'.
+
+Programming Language: Ruby on Rails
+Rails version: 2.1.1
+Database: Mysql
+External Gems:
+  Rspec
+  Factory-girl
+
+Studies Start: May 2, 2009 (Including Caelum course's)
+Development Start: July 9, 2009
+Production Start:
+Contributors:
+
+Ubiquitous language: (in translate to Portuguese)
+Race = Prova
+Results = Resultados dos atletas
+Runner = Atleta (corredor)
+
+
+To do:
+-
+
