@@ -1,0 +1,14 @@
+<div id='races_main'>
+<% for race in @races %>
+    <div id='races_single' style="clear:left;padding-top:10px;">
+        <div id='race_date' class='data'>
+            <div><%= race.date.strftime('%d') %></div>
+            <div style="text-align:center;"><%= race.date.strftime('%b') %></div>
+        </div>
+        <div id='race_name' class="race" ><%= link_to race.name, edit_race_path(race.id) %></div>
+        <div id='race_distance' class="race" ><%=h race.distance %></div>
+        <div id='race_edit' class="race clear" ><%= link_to 'Editar', edit_race_path(race.id) %></div>
+    </div>
+<% end %>
+</div>
+
