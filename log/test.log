@@ -452,3 +452,67 @@
   [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
   [4;36;1mRace Load (0.000000)[0m   [0;1mSELECT * FROM `races` WHERE (`races`.`id` = 953125641) [0m
   [4;35;1mSQL (0.000005)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000007)[0m   [0;1mBEGIN[0m
+  [4;35;1mRace Create (0.000000)[0m   [0mINSERT INTO `races` (`name`, `stage`, `created_at`, `updated_at`, `url`, `date`, `place`, `distance`) VALUES('value for name', 'value for stage', '2009-08-16 21:12:03', '2009-08-16 21:12:03', 'value for url', '2009-08-16 21:12:03', 'value for place', 'value for distance')[0m
+  [4;36;1mSQL (0.005237)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000175)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000007)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000296)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000023)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000002)[0m   [0mBEGIN[0m
+  [4;36;1mRace Load (0.001575)[0m   [0;1mSELECT * FROM `races` WHERE (`races`.`id` = 953125641) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mRace Create (0.000000)[0m   [0mINSERT INTO `races` (`name`, `stage`, `created_at`, `updated_at`, `url`, `date`, `place`, `distance`) VALUES('value for name', 'value for stage', '2009-08-16 21:16:05', '2009-08-16 21:16:05', 'value for url', '2009-08-16 21:16:05', 'value for place', 'value for distance')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000282)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000003)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000214)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000029)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000499)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000068)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000015)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000002)[0m   [0mBEGIN[0m
+  [4;36;1mRace Load (0.000375)[0m   [0;1mSELECT * FROM `races` WHERE (`races`.`id` = 953125641) [0m
+  [4;35;1mSQL (0.000295)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mRace Create (0.000289)[0m   [0mINSERT INTO `races` (`name`, `stage`, `created_at`, `updated_at`, `url`, `date`, `place`, `distance`) VALUES('value for name', 'value for stage', '2009-08-16 21:16:43', '2009-08-16 21:16:43', 'value for url', '2009-08-16 21:16:43', 'value for place', 'value for distance')[0m
+  [4;36;1mSQL (0.002346)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000001)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000106)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000104)[0m   [0mBEGIN[0m
+  [4;36;1mRace Load (0.000309)[0m   [0;1mSELECT * FROM `races` WHERE (`races`.`id` = 953125641) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mRace Create (0.000000)[0m   [0mINSERT INTO `races` (`name`, `stage`, `created_at`, `updated_at`, `url`, `date`, `place`, `distance`) VALUES('value for name', 'value for stage', '2009-08-16 21:18:52', '2009-08-16 21:18:52', 'value for url', '2009-08-16 21:18:52', 'value for place', 'value for distance')[0m
+  [4;36;1mSQL (0.000343)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000004)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000001)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000002)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000001)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mRace Load (0.000000)[0m   [0;1mSELECT * FROM `races` WHERE (`races`.`id` = 953125641) [0m
+  [4;35;1mSQL (0.000149)[0m   [0mROLLBACK[0m

@@ -31,11 +31,10 @@ describe Race do
     end
   end
 
-  it "should not valid if name greater than 150 characters" do
-    races(:one).name = "01234567890123456789012345678901234567890123456789012345678901234567890"
+  it "should not valid if name greater than 70 characters" do
+    races(:one).name = "a" * 71
     races(:one).should_not be_valid
     races(:one).errors.full_messages.should include("Name greater than 70 characters." )
-#    races(:one).name.size.should < 70
   end
 
 #  it "should not valid without name" do
