@@ -1,6 +1,19 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe RacesController do
+  fixtures :races
+  before(:each) do
+    @valid_attributes = {
+      :name => "value for name",
+      :stage => "value for stage",
+      :date => Time.now,
+      :place => "value for place",
+      :distance => "value for distance",
+      :url => "value for url"
+    }
+
+    @race = Race.new
+  end
 
   #Delete these examples and add some real ones
   it "should use RacesController" do
