@@ -3,16 +3,16 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 describe Atleta do
   before(:each) do
     @valid_attributes = {
-    :name => "Primeiro nome",
+    :nome => "Primeiro nome",
     :cpf => "12345678910",
     :celular => 12345678
     }
-  @Atleta = Atleta.new
+  @atleta = Atleta.new
   end
 
 
  after(:each) do
-   @Atleta.destroy unless @Atleta.new_record?
+   @atleta.destroy unless @atleta.new_record?
  end
 
  after(:all) do
@@ -24,8 +24,8 @@ describe Atleta do
   end
 
   it "should be not valid without name" do
-    @Atleta.name.should_be == nil
-    @Atleta.should_not be_valid
+    @atleta.nome = nil
+    @atleta.should_not be_valid
   end
 
 end
