@@ -7,6 +7,7 @@ doc
 *swp
 *swo
 *.gem
+*.tmproj
 log/*.log
 tmp/**/*
-
+config/database.yml
