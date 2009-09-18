@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Locamotiva</title>
+  <%= stylesheet_link_tag 'scaffold' %>
+</head>
+<body>
+
+<p style="color: green"><%= flash[:notice] %></p>
+<div class="logo">Logotipo</div>
+<div style="float:left; padding-left:20px;">
+    <form action="/search" id="top_search_form" method="get">
+        Busca <input name="q" type="search"> <input value="Search" type="submit">
+    </form>
+  <div style="float:left;">
+    <span><%= link_to "Home", resultados_path %></span>
+    <span>|</span>
+    <span><%= link_to "Pxxxxxx", provas_path %></span>
+    <span>|</span>
+    <span><%= link_to "Axxxxxx", atletas_path %></span>
+  </div>
+  <div id="header" class="header" style="float:left;">
+				<li><%= link_to "Home", resultados_path %></li>
+		    <li>|</li>
+				<li><%= link_to "Provas", provas_path %></li>
+		    <li>|</li>
+				<li><%= link_to "Atletas", atletas_path %></li>
+		<br class="clear" />
+  </div>
+</div>
+<div style="padding-left:20px; padding-top:50px; clear:both;">
+<%= yield  %>
+</div>
+<div style="visibility:hidden;">
+  <a href="/repositories">Browse</a> | <a href="/guides">Guides</a> | <a href="/search">Advanced</a>
+</div>
+</body>
+</html>
+<!style="padding-top:5px;float:left;"  >
+

@@ -5,6 +5,56 @@ body, p, ol, ul, td {
   font-size:   13px;
   line-height: 18px;
 }
+#main {
+/*  text-align: center;*/
+/*  position:relative;*/
+  min-height:100%;
+  _height:100%;
+  padding-bottom: -40px;
+  background-color: #000;
+}
+
+#menu-logo {
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+#menu.with-logo {
+  margin: 0 0 35px 0;
+  padding: 0 20px 0 175px;
+}
+
+#menu {
+  font-size: 2.2em;
+/*  border-bottom: 1px dotted #252525;*/
+  padding: 0 20px 0 60px;
+  background-color: #000;
+}
+
+#menu ul {
+  font-size: 1.2em;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#menu ul li {
+  display: inline;
+  line-height: 2.0em;
+  padding: 0 10px 0 0;
+}
+
+#menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+#menu ul li a:hover {
+  color: #FFF6BF;
+  background-color: #4b4b4b;
+}
 
 pre {
   background-color: #eee;
@@ -17,6 +67,12 @@ pre {
   padding: 10px;
   border: solid;
   border-color: green;
+  float: left;
+}
+
+.header {
+  font-size: 50px;
+  padding: 20px;
   float: left;
 }
 
