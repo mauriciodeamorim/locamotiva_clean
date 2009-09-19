@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+	
+	  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	  <title>Locamotiva</title>
+	  <link href="atletas_files/scaffold.css" media="screen" rel="stylesheet" type="text/css">
+	</head><body>
+		<div id="main">
+			
+			<div id="search" style="visibility: hidden;">
+		    <form action="/search" id="top_search_form" method="get">
+		        Busca <input name="q" type="search"> <input value="Search" type="submit">
+		    </form>
+			</div>
+			<div id="menu">Logotipo</div>
+		  <div id="menu" class="header" style="float: left;">
+				<ul>
+						<li><a href="http://localhost:3000/resultados">Home</a></li>
+				    <li>|</li>
+						<li><a href="http://localhost:3000/provas">Provas</a></li>
+				    <li>|</li>
+						<li><a href="http://localhost:3000/atletas">Atletas</a></li>
+				</ul>
+		  </div>
+	  </div>
+		<p style="color: green;"></p>
+		<div id="internal" class="internal">
+			jkjkjkjkjkj
+			<h1>Listagem de atletas</h1>
+
+<table>
+  <tbody><tr>
+    <th>Nome</th>
+    <th>Data de Nascimento</th>
+    <th>Cpf</th>
+    <th>Celular</th>
+    <th>Notas</th>
+  </tr>
+
+
+  <tr>
+    <td>Mauricio</td>
+    <td>2009-09-19 00:57:00 UTC</td>
+    <td></td>
+    <td></td>
+    <td>vxc cxxcvxv vscceu amo vc muito muito muito</td>
+    <td><a href="http://localhost:3000/atletas/1">Mostrar</a></td>
+    <td><a href="http://localhost:3000/atletas/1/edit">Editar</a></td>
+    <td><a href="http://localhost:3000/atletas/1" onclick="if (confirm('Você tem certeza?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'wbjQRzX3AOi6/dFMwZR6ZlSQl0zqiqbhtQK56OmCzaY='); f.appendChild(s);f.submit(); };return false;">Apagar</a></td>
+  </tr>
+
+  <tr>
+    <td>Antonio</td>
+    <td>2005-09-05 23:00:00 UTC</td>
+    <td>000000000000000000000000000000</td>
+    <td></td>
+    <td></td>
+    <td><a href="http://localhost:3000/atletas/2">Mostrar</a></td>
+    <td><a href="http://localhost:3000/atletas/2/edit">Editar</a></td>
+    <td><a href="http://localhost:3000/atletas/2" onclick="if (confirm('Você tem certeza?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'wbjQRzX3AOi6/dFMwZR6ZlSQl0zqiqbhtQK56OmCzaY='); f.appendChild(s);f.submit(); };return false;">Apagar</a></td>
+  </tr>
+
+  <tr>
+    <td>Bezerra</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><a href="http://localhost:3000/atletas/3">Mostrar</a></td>
+    <td><a href="http://localhost:3000/atletas/3/edit">Editar</a></td>
+    <td><a href="http://localhost:3000/atletas/3" onclick="if (confirm('Você tem certeza?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'wbjQRzX3AOi6/dFMwZR6ZlSQl0zqiqbhtQK56OmCzaY='); f.appendChild(s);f.submit(); };return false;">Apagar</a></td>
+  </tr>
+
+</tbody></table>
+
+<br>
+
+<a href="http://localhost:3000/atletas/new">Novo atleta</a>
+
+<div class="dateBox">
+	<div class="date">
+		 <span class="bigDate">12.</span>
+		 september
+	</div>
+	<div class="countdown"> </div>
+</div>
+
+		</div>
+		<div id="footer" class="header">
+	  	<a href="http://localhost:3000/repositories">Browse</a> | <a href="http://localhost:3000/guides">Guides</a> | <a href="http://localhost:3000/search">Advanced</a>
+		</div>
+	<!--style="padding-top:5px;float:left;"  -->
+
+</body></html>

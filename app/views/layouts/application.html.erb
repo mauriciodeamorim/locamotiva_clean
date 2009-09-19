@@ -7,12 +7,13 @@
 	</head>
 	<body>
 		<div id="main">
-			<div id="menu">Logotipo</div>
+			
 			<div id="search" style="visibility:hidden;">
 		    <form action="/search" id="top_search_form" method="get">
 		        Busca <input name="q" type="search"> <input value="Search" type="submit">
 		    </form>
 			</div>
+			<div id="menu">Logotipo</div>
 		  <div id="menu" class="header" style="float:left;">
 				<ul>
 						<li><%= link_to "Home", resultados_path %></li>
@@ -24,10 +25,11 @@
 		  </div>
 	  </div>
 		<p style="color: green"><%= flash[:notice] %></p>
-		<div style="padding-left:20px; padding-top:50px; clear:both;">
+		<div id="internal" class="internal">
+			jkjkjkjkjkj
 			<%= yield  %>
 		</div>
-		<div style="visibility:hidden;">
+		<div id="footer" class="header">
 	  	<a href="/repositories">Browse</a> | <a href="/guides">Guides</a> | <a href="/search">Advanced</a>
 		</div>
 	</body>
