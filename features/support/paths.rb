@@ -10,6 +10,9 @@ module NavigationHelpers
     
     when /the homepage/
       '/'
+    when /the new result page/
+      new_result_path
+
     when /the new runner page/
       new_runner_path
       
