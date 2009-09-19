@@ -1,4 +1,6 @@
 class Race < ActiveRecord::Base
+  has_many :resultados
+  
   validates_presence_of :name
   validates_presence_of :date
   validates_presence_of :distance

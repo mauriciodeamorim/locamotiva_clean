@@ -10,9 +10,15 @@ module NavigationHelpers
     
     when /the homepage/
       '/'
+    when /the new runner page/
+      new_runner_path
+      
     when /the list of races/
       races_path
-          
+      
+    when /list of runners/
+      runners_path           
+
     # Add more mappings here.
     # Here is a more fancy example:
     #

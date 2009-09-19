@@ -1,4 +1,4 @@
 class Prova < ActiveRecord::Base
-  has_many  :resultados
+    has_many  :resultados
 end
 
