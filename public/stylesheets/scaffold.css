@@ -19,7 +19,6 @@ body, p, ol, ul, td {
   width: 100%;
   padding-bottom: -40px;
   font-size: 2.2em;
-/*  border-bottom: 1px dotted #252525;*/
   padding: 0;
   background-color: #000;
 }
@@ -43,7 +42,8 @@ body, p, ol, ul, td {
 }
 
 #menu ul li a:hover {
-  color: #FFF6BF;
+/*  color: #FFF6BF;*/
+  color: #FFF000;
   background-color: #4b4b4b;
 }
 #menu-logo {
@@ -68,13 +68,17 @@ pre {
 	padding-top:50px;
 	clear:both;
 	background-color: #FFF;
+	min-height: 400px;
 }
+
 .logo {
-  font-size: 20px;
-  padding: 10px;
-  border: solid;
-  border-color: green;
-  float: left;
+  padding:0 0 0 10px;
+  margin:0;
+  top:25px; 
+  color: red;
+  font-size:40px;
+  position:absolute;
+  text-decoration: none;
 }
 
 .header {
@@ -83,6 +87,17 @@ pre {
   float: left;
 }
 
+.footer {
+  position: relative;
+  min-height: 150px;
+  _height: 100%;
+  width: 100%;
+  padding-bottom: -40px;
+/*  font-size: 2.2em;*/
+  padding: 0;
+  background-color: #000;
+  text-align: center;	
+}
 .data {
   font-size: 20px;
   padding: 5px;
@@ -90,14 +105,14 @@ pre {
   border-color: blue;
 }
 
-.prova {
+.prova, td {
   font-size: 20px;
   padding: 10px;
   color: gray;
 }
 
 a { color: #000; }
-a:visited { color: #666; }
+a:visited { color: #555; }
 a:hover { color: #fff; background-color:#000; }
 
 .fieldWithErrors {
@@ -229,6 +244,6 @@ font-weight:bold;
 a {
 color:#FF6600;
 }
-a img {
+/*a img {
 border:medium none;
-}
+}*/

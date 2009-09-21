@@ -1,2 +1,31 @@
-<h1>Results#index</h1>
-<p>Find me in app/views/results/index.html.erb</p>
+<h1>Provas recentes</h1>
+<div>
+	<div class="dateBox">
+		<div class="date">
+	    <div class="bigDate"><%= @race.date.strftime('%d') %></div>
+	    <div class="bigDate"><%= @race.date.strftime('%b') %></div>
+		</div>
+		<div class="countdown"> </div>
+	</div>
+  <div class="prova" style="float:left"><%=h @race.name %></div>
+  <div class="prova" style="float:left"><%=h @race.distance %></div>
+</div>
+<table class="prova" style="clear:both; padding-top:20px;">
+  <tr>
+    <td>Número</td>
+    <td>Atleta</td>
+    <td>Tempo oficial</td>
+    <td>Tempo líquido</td>
+    <td>Classificação</td>
+  </tr>
+
+<% for r in @results_by_race %>
+  <tr>
+    <td><%=h r.start_number %></td>
+    <td><%=h r.runner.name %></td>
+    <td><%=h r.official_time.strftime("%H:%M:%S") %></td>
+    <td><%=h r.liquid_time.strftime("%H:%M:%S") %></td>
+    <td><%=h r.class_general %></td>
+  </tr>
+<% end %>
+</table>

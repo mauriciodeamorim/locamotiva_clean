@@ -10,7 +10,7 @@ class CreateResults < ActiveRecord::Migration
       t.integer :class_sex, :limit => 5
       t.integer :class_category, :limit => 5
       t.date :pace
-      t.distance :string, :limit => 10
+      t.string :distance, :limit => 10
       t.string :substitute
       t.text :notes
 

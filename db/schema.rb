@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090919063757) do
+ActiveRecord::Schema.define(:version => 20090921012258) do
 
   create_table "atletas", :force => true do |t|
     t.string   "nome"
@@ -76,6 +76,8 @@ ActiveRecord::Schema.define(:version => 20090919063757) do
     t.string   "substitute"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "id_race"
+    t.integer  "id_runner"
   end
 
   create_table "runners", :force => true do |t|

@@ -10,21 +10,20 @@
 		  <div id="menu">
 				<ul>
 						<li></li>
-						<li><%= link_to "Home", resultados_path %></li>
+						<li><%= link_to "Home", results_path %></li>
 				    <li>|</li>
-						<li><%= link_to "Provas", provas_path %></li>
+						<li><%= link_to "Provas", races_path %></li>
 				    <li>|</li>
-						<li><%= link_to "Atletas", atletas_path %></li>
+						<li><%= link_to "Atletas", runners_path %></li>
 				</ul>
 		  </div>
-			<div style="padding:0 0 0 10px; margin:0; top:25px; color:red;font-size:40px;position:absolute;">
-				<%= link_to "Locamotiva", races_path %></div>
 	  </div>
-		<p style="color: green"><%= flash[:notice] %></p>
+		<div class="logo"><%= link_to "Locamotiva", races_path %></div>		
 		<div id="content" class="internal">
 			<%= yield  %>
 		</div>
-		<div id="menu" class="header">
+		<p style="color: green"><%= flash[:notice] %></p>
+		<div class="footer">
 	  	<a href="/results">Resultados</a> | <a href="/races">Provas</a> | <a href="/runners">Atletas</a>
 		</div>
 	</body>
