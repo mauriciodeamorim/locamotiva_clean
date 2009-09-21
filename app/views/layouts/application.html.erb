@@ -7,15 +7,9 @@
 	</head>
 	<body>
 		<div id="main">
-			
-			<div id="search" style="visibility:hidden;">
-		    <form action="/search" id="top_search_form" method="get">
-		        Busca <input name="q" type="search"> <input value="Search" type="submit">
-		    </form>
-			</div>
-			<div id="menu">Logotipo</div>
-		  <div id="menu" class="header" style="float:left;">
+		  <div id="menu">
 				<ul>
+						<li></li>
 						<li><%= link_to "Home", resultados_path %></li>
 				    <li>|</li>
 						<li><%= link_to "Provas", provas_path %></li>
@@ -23,16 +17,20 @@
 						<li><%= link_to "Atletas", atletas_path %></li>
 				</ul>
 		  </div>
+			<div style="padding:0 0 0 10px; margin:0; top:25px; color:red;font-size:40px;position:absolute;">
+				<%= link_to "Locamotiva", races_path %></div>
 	  </div>
 		<p style="color: green"><%= flash[:notice] %></p>
-		<div id="internal" class="internal">
-			jkjkjkjkjkj
+		<div id="content" class="internal">
 			<%= yield  %>
 		</div>
-		<div id="footer" class="header">
-	  	<a href="/repositories">Browse</a> | <a href="/guides">Guides</a> | <a href="/search">Advanced</a>
+		<div id="menu" class="header">
+	  	<a href="/results">Resultados</a> | <a href="/races">Provas</a> | <a href="/runners">Atletas</a>
 		</div>
 	</body>
 </html>
-<!style="padding-top:5px;float:left;"  >
-
+<div id="search" style="visibility:hidden;">
+  <form action="/search" id="top_search_form" method="get">
+      Busca <input name="q" type="search"> <input value="Search" type="submit">
+  </form>
+</div>

@@ -12,7 +12,9 @@ describe Result do
       :class_sex => 1,
       :class_category => 1,
       :pace => Date.today,
-      :substitute => "value for substitute"
+      :distance => "value for distance",
+      :substitute => "value for substitute",
+      :notes => "value for notes"
     }
   end
 

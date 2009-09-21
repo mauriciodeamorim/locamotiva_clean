@@ -1,15 +1,12 @@
-<div id='races_main'>
 <% for race in @races %>
-    <div id='races_single' style="clear:left;padding-top:10px;">
-        <div id='race_date' class='data'>
-            <div><%= race.date.strftime('%d') %></div>
-            <div style="text-align:center;"><%= race.date.strftime('%b') %></div>
-        </div>
-        <div id='race_name' class="race" ><%= link_to race.name, edit_race_path(race.id) %></div>
-        <div id='race_distance' class="race" ><%=h race.distance %></div>
-    </div>
+	<div class="dateBox">
+		<div class="date">
+	    <div class="bigDate"><%= race.date.strftime('%d') %></div>
+	    <div class="bigDate"><%= race.date.strftime('%b') %></div>
+		</div>
+		<div class="countdown"> </div>
+	</div>
+	<h1 style="float:left; padding-top:20px; text-decoration: none;"><%= link_to race.name, result_path(race.id) %></h1>
+  <h1 id='race_distance' style="float:left; padding-top:20px;padding-left:20px; color:black;"><%=h race.distance %></h1>
+	<div style="clear:left"></div>
 <% end %>
-</div>
-<!-- <table
- link_to prova.nome, resultado_path(prova.id)
-</table> -->
