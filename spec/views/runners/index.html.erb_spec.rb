@@ -5,8 +5,7 @@ describe "/runners/index" do
     render 'runners/index'
   end
 
-  #Delete this example and add some real ones or delete this file
-  it "should tell you where to find the file" do
-    response.should have_tag('p', %r[Find me in app/views/runners/index])
+  it "should show the page with some frase" do
+    response.should have_tag('p', %r[Área restrita.])
   end
 end

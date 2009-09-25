@@ -1,7 +1,15 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-# one:
-#   column: value
-#
-# two:
-#   column: value
+one:
+  nome: MyString
+  data_nasc: 2009-05-03 03:37:37
+  cpf: MyString
+  celular: MyString
+  notas: MyText
+
+two:
+  nome: MyString
+  data_nasc: 2009-05-03 03:37:37
+  cpf: MyString
+  celular: MyString
+  notas: MyText
