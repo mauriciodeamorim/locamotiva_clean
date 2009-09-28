@@ -9,10 +9,25 @@ one:
   url: Prova 1
 
 two:
-  name: MyString
-  stage: MyString
+  name: Corpore Classic
+  stage: São Paulo	
   date: 2009-07-09 22:29:38
-  place: MyString
-  distance: MyString
-  url: MyString
+  place: Ibirapuera
+  distance: 10Km
+  url: http://corpore.org.br
 
+three:
+  name: Fila Night Run
+  stage: São Paulo	
+  date: 2009-02-03 22:29:38
+  place: USP
+  distance: 5Km
+  url: http://filarunning.com
+  
+four:
+  name: Corrida Internacional de São Silvestre
+  stage: São Paulo	
+  date: 2009-12-31
+  place: Paulista
+  distance: 15Km
+  url: http://saosilvestre.com.br

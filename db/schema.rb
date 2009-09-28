@@ -65,15 +65,17 @@ ActiveRecord::Schema.define(:version => 20090921012258) do
 
   create_table "results", :force => true do |t|
     t.string   "start_number"
-    t.string   "category"
+    t.string   "category",       :limit => 10
     t.string   "team"
     t.date     "liquid_time"
     t.date     "official_time"
-    t.integer  "class_general"
-    t.integer  "class_sex"
-    t.integer  "class_category"
+    t.integer  "class_general",  :limit => 8
+    t.integer  "class_sex",      :limit => 8
+    t.integer  "class_category", :limit => 8
     t.date     "pace"
+    t.string   "distance",       :limit => 10
     t.string   "substitute"
+    t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "id_race"

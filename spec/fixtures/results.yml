@@ -1,25 +1,27 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  start_number: MyString
-  category: MyString
-  team: MyString
-  liquid_time: 2009-09-19
-  official_time: 2009-09-19
-  class_general: 1
-  class_sex: 1
-  class_category: 1
-  pace: 2009-09-19
-  substitute: MyString
+  start_number: 123
+  category: M3034
+  team: Locamotiva
+  liquid_time: 2009-09-19 00:45:32
+  official_time: 2009-09-19 00:49:01
+  class_general: 100
+  class_sex: 90
+  class_category: 10
+  pace: 2009-09-19 00:04:30
+  id_race: one
+  id_runner: one
 
 two:
-  start_number: MyString
-  category: MyString
-  team: MyString
-  liquid_time: 2009-09-19
-  official_time: 2009-09-19
-  class_general: 1
-  class_sex: 1
-  class_category: 1
-  pace: 2009-09-19
-  substitute: MyString
+  start_number: 222
+  category: M3034
+  team: Locamotiva
+  liquid_time: 2009-09-19 00:46:32
+  official_time: 2009-09-19 00:50:01
+  class_general: 222
+  class_sex: 200
+  class_category: 22
+  pace: 2009-09-19 00:04:40
+  id_race: four
+  id_runner: four
