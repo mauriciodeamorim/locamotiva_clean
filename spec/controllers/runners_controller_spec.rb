@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 describe RunnersController do
 
   #Delete these examples and add some real ones
-  it "should use RunnerController" do
+  it "should use RunnersController" do
     controller.should be_an_instance_of(RunnersController)
   end
 
