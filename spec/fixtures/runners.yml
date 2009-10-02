@@ -1,6 +1,6 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
+runner_one:
   name: Atleta numero um
   sex: M
   birthday: 2009-09-18
@@ -10,7 +10,7 @@ one:
   nick: um
   email: atleta@um.com
 
-two:
+runner_two:
   name: Atleta numero dois
   sex: M
   birthday: 2009-05-11
@@ -20,7 +20,7 @@ two:
   nick: dois
   email: atleta@dois.com
   
- three:
+runner_three:
   name: Atleta numero tres
   sex: M
   birthday: 2000-01-05

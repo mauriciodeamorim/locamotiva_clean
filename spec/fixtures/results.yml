@@ -10,8 +10,8 @@ one:
   class_sex: 90
   class_category: 10
   pace: 2009-09-19 00:04:30
-  id_race: one
-  id_runner: one
+  race: one
+  runner: runner_one
 
 two:
   start_number: 222
@@ -23,5 +23,5 @@ two:
   class_sex: 200
   class_category: 22
   pace: 2009-09-19 00:04:40
-  id_race: four
-  id_runner: four
+  race: one
+  runner: runner_two
