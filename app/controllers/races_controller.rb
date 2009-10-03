@@ -17,9 +17,8 @@ class RacesController < ApplicationController
       format.xml  { render :xml => @race }
     end
 	end
-	
-  # Mostra a última prova
-  def show_last
+
+  def show_last_race
     @race = Race.find(:last)
     respond_to do |format|
       format.html # show_last.html.erb
