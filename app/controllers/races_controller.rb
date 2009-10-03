@@ -10,11 +10,11 @@ class RacesController < ApplicationController
   # GET /provas/1
   # GET /provas/1.xml
   def show
-    @prova = Prova.find(params[:id])
+    @race = Race.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @prova }
+      format.xml  { render :xml => @race }
     end
 	end
 	

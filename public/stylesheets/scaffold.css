@@ -64,7 +64,7 @@ pre {
 }
 
 .internal {
-	padding-left:20px; 
+	padding-left:20px;
 	padding-top:50px;
 	clear:both;
 	background-color: #FFF;
@@ -74,7 +74,7 @@ pre {
 .logo {
   padding:0 0 0 10px;
   margin:0;
-  top:25px; 
+  top:25px;
   color: red;
   font-size:40px;
   position:absolute;
@@ -96,7 +96,7 @@ pre {
 /*  font-size: 2.2em;*/
   padding: 0;
   background-color: #000;
-  text-align: center;	
+  text-align: center;
 }
 .data {
   font-size: 20px;
@@ -106,9 +106,25 @@ pre {
 }
 
 .prova, td {
-  font-size: 20px;
-  padding: 10px;
   color: gray;
+  font-size: 20px;
+  padding: 5px;
+  clear: both;
+}
+
+.race_title {
+  color:#EA5D0F;
+  font-size: 20px;
+  font-weight:normal;
+  font-size:200%;
+  float:left;
+  padding-top:20px;
+  margin:2px 0 15px;
+}
+
+.black {
+    color:black;
+    padding-left: 20px;
 }
 
 a { color: #000; }
@@ -247,3 +263,4 @@ color:#FF6600;
 /*a img {
 border:medium none;
 }*/
+

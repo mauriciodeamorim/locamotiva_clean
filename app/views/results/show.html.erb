@@ -1,15 +1,13 @@
-<h1>Provas recentes</h1>
-<div>
-	<div class="dateBox">
-		<div class="date">
-	    <div class="bigDate"><%= @race.date.strftime('%d') %></div>
-	    <div class="bigDate"><%= @race.date.strftime('%b') %></div>
-		</div>
-		<div class="countdown"> </div>
+<div class="dateBox">
+	<div class="date">
+    <div class="bigDate"><%= @race.date.strftime('%d') %></div>
+    <div class="bigDate"><%= @race.date.strftime('%b') %></div>
 	</div>
-  <div class="race_title"><%= @race.name %></div>
-  <div class="race_title black"><%= @race.distance %></div>
+	<div class="countdown"> </div>
 </div>
+<div class="race_title"><%= @race.name %></div>
+<div class="race_title black"><%= @race.distance %></div>
+<div style="clear:left"></div>
 
 <table class="prova">
   <tr>
