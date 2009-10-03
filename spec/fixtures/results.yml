@@ -4,24 +4,24 @@ one:
   start_number: 123
   category: M3034
   team: Locamotiva
-  liquid_time: 2009-09-19 00:45:32
-  official_time: 2009-09-19 00:49:01
+  liquid_time: "2009-09-19 00:45:32"
+  official_time: "2009-09-19 00:49:01"
   class_general: 100
   class_sex: 90
   class_category: 10
   pace: 2009-09-19 00:04:30
-  race: one
-  runner: runner_one
+  id_race: 4
+  id_runner: 1
 
 two:
   start_number: 222
   category: M3034
   team: Locamotiva
-  liquid_time: 2009-09-19 00:46:32
-  official_time: 2009-09-19 00:50:01
+  liquid_time: '2009-09-19 00:46:32'
+  official_time: '2009-09-19 00:50:01'
   class_general: 222
   class_sex: 200
   class_category: 22
   pace: 2009-09-19 00:04:40
-  race: one
-  runner: runner_two
+  id_race: 4
+  id_runner: 2

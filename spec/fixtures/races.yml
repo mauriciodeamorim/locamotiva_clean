@@ -1,6 +1,7 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
+  id: 1
   name: Prova 1
   stage: Prova 1
   date: 2009-07-09 22:29:38
@@ -9,6 +10,7 @@ one:
   url: Prova 1
 
 two:
+  id: 2
   name: Corpore Classic
   stage: São Paulo	
   date: 2009-07-09 22:29:38
@@ -17,6 +19,7 @@ two:
   url: http://corpore.org.br
 
 three:
+  id: 3
   name: Fila Night Run
   stage: São Paulo	
   date: 2009-02-03 22:29:38
@@ -25,6 +28,7 @@ three:
   url: http://filarunning.com
   
 four:
+  id: 4
   name: Corrida Internacional de São Silvestre
   stage: São Paulo	
   date: 2009-12-31
