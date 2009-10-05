@@ -3,16 +3,10 @@ body { background-color: #fff; color: #333; margin: 0; padding: 0; }
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
-  line-height: 18px;
-}
-#main {
-  text-align: center;
-  position:relative;
-  min-height:100%;
-  _height:100%;
-  padding-bottom: -40px;
+  line-height: 22px;
 }
 #menu {
+  text-align: center;
   position: relative;
   min-height: 100%;
   _height: 100%;
@@ -22,45 +16,47 @@ body, p, ol, ul, td {
   padding: 0;
   background-color: #000;
 }
-
 #menu ul {
   font-size: 1.2em;
   margin: 0 auto;
   text-align: center;
 }
-
 #menu ul li {
   display: inline;
   line-height: 2.0em;
   padding: 0 10px 0 0;
 }
-
 #menu ul li a {
   color: #fff;
   text-decoration: none;
   padding: 5px 10px;
 }
-
 #menu ul li a:hover {
 /*  color: #FFF000;#FFF6BF;#4B4B4B*/
   color: #000;
   background-color: #FFAA06;
 }
-#menu-logo {
+
+#logo {
   position: absolute;
-  top:0;
-  left:0;
+  margin: 0;
+  top:25px;
+  padding:0 0 0 25px;
+  font-size:40px;
 }
 
-#menu.with-logo {
-  margin: 0 0 35px 0;
-  padding: 0 20px 0 175px;
+#logo a {
+   text-decoration: none;   
+}
+
+#logo a:visited {
+    color: #FFAA06;
 }
 
 pre {
-  background-color: #eee;
-  padding: 10px;
-  font-size: 11px;
+    background-color: #eee;
+    padding: 10px;
+    font-size: 11px;
 }
 
 .internal {
@@ -68,36 +64,33 @@ pre {
 	padding-top:50px;
 	clear:both;
 	background-color: #FFF;
-	min-height: 400px;
+	min-height: 600px;
 }
-
-.logo {
-  padding:0 0 0 10px;
-  margin:0;
-  top:25px;
-  color: red;
-  font-size:40px;
-  position:absolute;
-  text-decoration: none;
-}
-
 .header {
-  font-size: 50px;
-  padding: 20px;
-  float: left;
+    font-size: 50px;
+    padding: 20px;
+    float: left;
 }
 
-.footer {
-  position: relative;
-  min-height: 150px;
-  _height: 100%;
-  width: 100%;
-  padding-bottom: -40px;
-/*  font-size: 2.2em;*/
-  padding: 0;
-  background-color: #000;
-  text-align: center;
+#footer {
+    text-align: center;
+    position: relative;
+    min-height: 90px;
+    _height: 80%;
+    background-color: #000;    
+    width: 100%;
+    padding-top: 20px;
 }
+
+.footer, ul {
+    font-size: 1.0em;
+}
+
+.footer, ul, li {
+    display: inline;
+/*    color: #FFAA06;*/
+}
+
 .data {
   font-size: 20px;
   padding: 5px;
