@@ -45,5 +45,12 @@ class RacesController < ApplicationController
     end
   end
 
+  def show_last_race
+    @race = Race.find(:last)
+    respond_to do |format|
+      format.html # show_last.html.erb
+      format.xml  { render :xml => @race }
+    end
+  end
 end
 

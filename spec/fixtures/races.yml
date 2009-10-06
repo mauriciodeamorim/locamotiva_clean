@@ -2,12 +2,12 @@
 
 one:
   id: 1
-  name: Prova 1
-  stage: Prova 1
-  date: 2009-07-09 22:29:38
-  place: Prova 1
-  distance: 10Km
-  url: Prova 1
+  name: Maratona de São Paulo
+  stage: São Paulo
+  date: 2009-05-09 22:29:38
+  place: São Paulo
+  distance: 42Km
+  url: maratonadesaopaulo.com.br
 
 two:
   id: 2

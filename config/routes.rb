@@ -1,12 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :provas
-  map.resources :atletas
-  map.resources :resultados
   map.resources :races
   map.resources :runners
   map.resources :results
 
-  map.connect '', :controller => 'resultados'
+  map.connect '', :controller => 'results'
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
   map.connect 'last', :controller => 'provas', :action => 'showLast'
@@ -53,4 +50,3 @@ ActionController::Routing::Routes.draw do |map|
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing the them or commenting them out if you're using named routes and resources.
 end
-
