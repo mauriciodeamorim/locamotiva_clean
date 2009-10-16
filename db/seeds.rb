@@ -37,7 +37,7 @@ Race.create(
     
     # Attempt to load the base.rb file first. This overrides ActiveRecord::Base
     #require RAILS_ROOT + '/lib/db/fixtures/base'
-    Dir.glob(RAILS_ROOT + '/spec/fixtures/*.{yml,rb}').each do |file|
+    Dir.glob(RAILS_ROOT + '/spec/fixtures/*.{yml,csv}').each do |file|
       # If a yml file then create fixtures from yml else if an rb file
       # then execute the ruby file instead
       if file =~ /.*\.yml$/
