@@ -1,0 +1,8 @@
+production:
+  adapter: mysql
+  encoding: utf8
+  database: mauriciodeamorim
+  username: mauriciodeamorim
+  password: locamotiva09
+  host: mysql01.mauriciodeamorim.tecnologia.ws
+  pool: 5
