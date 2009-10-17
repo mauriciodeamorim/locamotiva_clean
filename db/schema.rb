@@ -11,27 +11,6 @@
 
 ActiveRecord::Schema.define(:version => 20090921012258) do
 
-  create_table "atletas", :force => true do |t|
-    t.string   "nome"
-    t.datetime "data_nasc"
-    t.string   "cpf"
-    t.string   "celular"
-    t.text     "notas"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "provas", :force => true do |t|
-    t.string   "nome"
-    t.string   "etapa"
-    t.datetime "data"
-    t.string   "local"
-    t.string   "url"
-    t.string   "distancia"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "races", :force => true do |t|
     t.string   "name"
     t.string   "stage"
@@ -43,36 +22,36 @@ ActiveRecord::Schema.define(:version => 20090921012258) do
     t.datetime "updated_at"
   end
 
-  create_table "resultados", :force => true do |t|
-    t.string   "nome"
-    t.string   "sexo",             :limit => 1
-    t.string   "faixaEtaria",      :limit => 10
-    t.string   "equipe"
-    t.datetime "tempoLiquido"
-    t.datetime "tempoOficial"
-    t.string   "classGeral",       :limit => 5
-    t.string   "classSexo",        :limit => 5
-    t.string   "classFaixaEtaria", :limit => 5
-    t.datetime "ritmo"
-    t.string   "distancia",        :limit => 15
-    t.string   "noLugarDe"
-    t.text     "notas"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "idAtleta"
-    t.integer  "idProva"
-  end
+#  create_table "resultados", :force => true do |t|
+#    t.string   "nome"
+#    t.string   "sexo",             :limit => 1
+#    t.string   "faixaEtaria",      :limit => 10
+#    t.string   "equipe"
+#    t.datetime "tempoLiquido"
+#    t.datetime "tempoOficial"
+#    t.string   "classGeral",       :limit => 5
+#    t.string   "classSexo",        :limit => 5
+#    t.string   "classFaixaEtaria", :limit => 5
+#    t.datetime "ritmo"
+#    t.string   "distancia",        :limit => 15
+#    t.string   "noLugarDe"
+#    t.text     "notas"
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#    t.integer  "idAtleta"
+#    t.integer  "idProva"
+#  end
 
   create_table "results", :force => true do |t|
     t.string   "start_number"
     t.string   "category",       :limit => 10
     t.string   "team"
-    t.date     "liquid_time"
-    t.date     "official_time"
+    t.datetime     "liquid_time"
+    t.datetime     "official_time"
     t.integer  "class_general",  :limit => 8
     t.integer  "class_sex",      :limit => 8
     t.integer  "class_category", :limit => 8
-    t.date     "pace"
+    t.datetime     "pace"
     t.string   "distance",       :limit => 10
     t.string   "substitute"
     t.text     "notes"
