@@ -46,19 +46,19 @@ ActiveRecord::Schema.define(:version => 20090921012258) do
     t.string   "start_number"
     t.string   "category",       :limit => 10
     t.string   "team"
-    t.datetime     "liquid_time"
-    t.datetime     "official_time"
+    t.datetime "liquid_time"
+    t.datetime "official_time"
     t.integer  "class_general",  :limit => 8
     t.integer  "class_sex",      :limit => 8
     t.integer  "class_category", :limit => 8
-    t.datetime     "pace"
+    t.datetime "pace"
     t.string   "distance",       :limit => 10
     t.string   "substitute"
     t.text     "notes"
-    t.datetime "created_at"
-    t.datetime "updated_at"
     t.integer  "id_race"
     t.integer  "id_runner"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "runners", :force => true do |t|
