@@ -31,3 +31,16 @@
 
 <%= link_to 'Edit', edit_race_path(@race) %> |
 <%= link_to 'Back', races_path %>
+
+<% form_for :dump, :url=>{:controller=>"races",
+                   :action=>"import"},
+                   :html => { :multipart => true } do |f| %>
+  <div id="file_import">
+    <span>Selecione o arquivo CSV: </span>
+    <span><%= f.file_field :file %></span>
+  </div>
+
+  <div>
+    <span><%= submit_tag 'Enviar' %></span>
+  </div>    
+<% end %>

@@ -4,10 +4,11 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :results
 
   map.connect '', :controller => 'results'
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
-  map.connect 'last', :controller => 'provas', :action => 'showLast'
-  map.connect 'lastR', :controller => 'resultados', :action => 'index'
+#  map.connect ':controller/:action/:id'
+#  map.connect ':controller/:action/:id.:format'
+#  map.connect 'last', :controller => 'provas', :action => 'showLast'
+#  map.connect 'lastR', :controller => 'resultados', :action => 'index'
+  map.connect 'x', :controller => 'races', :action => 'import'  
   #map.connect 'show/:id', :controller => 'resultados', :action => 'show'
 
   # The priority is based upon order of creation: first created -> highest priority.
