@@ -16,15 +16,21 @@ class RacesController < ApplicationController
       format.xml  { render :xml => @race }
     end
 	end
+  
+  def new
+    @race = Race.new
 
-#  def import
-#    csv_import
-#  end	
-   
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @agenda }
+    end
+  end
+
+
 	def import
-    @file=CSV::Reader.parse(params[:dump][:file])
-#    @file=CSV::Reader.parse(File.open("#{RAILS_ROOT}/#{file}", 'csv'))
-    n = 0
+    @file = CSV::Reader.parse(params[:dump][:file])
+    
+    increment = 1
     @file.each do |row|
       race = Race.new
       race.name = row[0]
@@ -35,10 +41,8 @@ class RacesController < ApplicationController
       race.url = row[5]
       
       if race.save
-        n = n+1
-        GC.start if n%50==0
-      end
-      flash.now[:message] = "Arquivo importado com sucesso. #{n} adicionados."
+        increment += 1
+      end    
     end
   end
 

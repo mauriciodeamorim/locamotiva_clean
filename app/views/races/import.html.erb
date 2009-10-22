@@ -1,34 +1,3 @@
- <% form_for :dump, :url=>{:controller=>"races",
-                    :action=>"import"},
-                    :html => { :multipart => true } do |f| -%>
- <table>
-   <tr>
-     <td>
-      <label for="dump_file">
-        Select a CSV File :
-      </label>
-     </td>
-     <td >
-       <%= f.file_field :file -%>
-     </td>
-   </tr>
-   <tr>
-     <td colspan='2'>
-       <%= submit_tag 'Submit' -%>
-     </td>
-   </tr>
- </table>
-<% end -%>
+<h1>Arquivo para provas importado com sucesso.</h1>
 
-<% form_for :dump, :url=>{:controller=>"races",
-                   :action=>"import"},
-                   :html => { :multipart => true } do |f| %>
-  <div id="file_import">
-    <span>Selecione o arquivo CSV: </span>
-    <span><%= f.file_field :file %></span>
-  </div>
-
-  <div>
-    <span><%= submit_tag 'Enviar' %></span>
-  </div>    
-<% end %>
+<%= link_to 'Listagem de provas', races_path %>

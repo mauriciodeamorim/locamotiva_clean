@@ -1,0 +1,14 @@
+<h1>Importação de arquivo para provas</h1>
+
+<% form_for :dump, :url=>{:controller=>"races",
+                   :action=>"import"},
+                   :html => { :multipart => true } do |f| %>
+  <div id="file_import">
+    <span>Selecione o arquivo CSV: </span>
+    <span><%= f.file_field :file %></span>
+  </div>
+
+  <div>
+    <span><%= submit_tag 'Enviar' %></span>
+  </div>    
+<% end %>
