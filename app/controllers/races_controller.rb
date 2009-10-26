@@ -25,9 +25,12 @@ class RacesController < ApplicationController
       format.xml  { render :xml => @agenda }
     end
   end
+  
+  def import
+    
+  end
 
-
-	def import
+	def import_csv
     @file = CSV::Reader.parse(params[:dump][:file])
     
     increment = 1

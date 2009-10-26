@@ -2,13 +2,17 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :races
   map.resources :runners
   map.resources :results
+  map.resources :users
 
   map.connect '', :controller => 'results'
+  map.connect 'sucess', :controller => 'races', :action => 'import_csv'  
+  map.connect 'import', :controller => 'races', :action => 'import' 
+  
 #  map.connect ':controller/:action/:id'
 #  map.connect ':controller/:action/:id.:format'
 #  map.connect 'last', :controller => 'provas', :action => 'showLast'
 #  map.connect 'lastR', :controller => 'resultados', :action => 'index'
-  map.connect 'imported', :controller => 'races', :action => 'import'  
+
   #map.connect 'show/:id', :controller => 'resultados', :action => 'show'
 
   # The priority is based upon order of creation: first created -> highest priority.

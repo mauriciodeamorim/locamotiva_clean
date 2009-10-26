@@ -86,6 +86,8 @@ pre {
 /*.footerMiniText { padding-top:20px; }*/
 
 
+/*Railscast about authologic*/
+div#user_nav { float: right; font-size: 0.9em; }
 
 /*correct footer*/
 #footer {
