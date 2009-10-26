@@ -3,11 +3,15 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :runners
   map.resources :results
   map.resources :users
-
+  map.resources :user_sessions  
+ 
   map.connect '', :controller => 'results'
   map.connect 'sucess', :controller => 'races', :action => 'import_csv'  
   map.connect 'import', :controller => 'races', :action => 'import' 
-  
+
+  map.login 'login', :controller => 'user_sessions', :action => 'new'  
+  map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'  
+      
 #  map.connect ':controller/:action/:id'
 #  map.connect ':controller/:action/:id.:format'
 #  map.connect 'last', :controller => 'provas', :action => 'showLast'
