@@ -1,4 +1,5 @@
 class RunnersController < ApplicationController
+  before_filter :require_user
   def index
     @runners = Runner.all
     
