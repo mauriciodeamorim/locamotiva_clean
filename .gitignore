@@ -1,0 +1,16 @@
+# Arquivos
+*.dll
+*.pdb
+*.log
+*.Publish.xml
+
+#Pastas
+TestResults
+Bin
+bin
+Debug
+debug
+Release
+obj
+TempPE
+Refactor

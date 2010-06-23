@@ -1,0 +1,163 @@
+﻿.bold-grid
+{
+	background-color:#fff;
+ 	border:2px solid #7F7F7F;
+	font-family:arial,helvetica,clean,sans-serif;
+	font-size:12px;
+	width:600px;
+}
+.bold-grid .titlebar
+ {
+	font-family:Tahoma,helvetica,clean,sans-serif;
+ 	background:url(../img/title-bg.png);
+ 	height:35px;
+ 	line-height:35px;
+ 	padding:0px 5px;
+	color:#fff;
+	font-size:15px;
+	font-weight:600;
+ }
+ .titlebarnew
+ {	
+	font-family:Tahoma,helvetica,clean,sans-serif;
+ 	background:url(../img/title-bg.png);
+ 	/*background:url(../img/gray_left.gif) no-repeat 0px 0px;
+ 	background:url(../img/gray_right.gif) no-repeat 100% 0px;*/
+ 	border:solid 2px #7F7F7F;
+ 	height:35px;
+ 	/*line-height:35px;*/
+ 	padding:0px 5px;
+	color:#fff;
+	font-weight:600;
+	font-size:12px;
+	width:600px;
+ }
+ 
+ .bold-grid .asc { background:url(img/sort_asc.gif) 50% 45% no-repeat; }
+ .bold-grid .desc { background:url(img/sort_desc.gif) 50% 55% no-repeat; }   
+ .bold-grid .sort
+ {
+    width:10px;
+    margin-left:6px;
+    display:-moz-inline-box;
+    display:inline-block;  
+    vertical-align:middle;	   
+    height:100%;          	
+ }
+ .bold-grid .datatable 
+ { 
+ 	width:100%; 
+ }
+ 
+ /* grid headers */
+ .bold-grid .datatable .header TH
+ {
+ 	background:url(../img/header-bg.png);
+ 	border-top:1px solid #7F7F7F;
+ 	height:24px;
+ 	line-height:24px;
+ 	padding-left:6px;
+ 	color:#666666; 
+ 	text-align:left;
+ 	border-left:solid 1px #75736E;
+ 	border-bottom:solid 1px #75736E;
+ }
+ .teste .header TH .tr .td .tbody
+ {
+ 	/*background:url(../img/header-bg.png);
+ 	border-top:1px solid #7F7F7F;
+ 	height:24px;
+ 	line-height:24px;
+ 	padding-left:6px;
+ 	color:#666666; 
+ 	text-align:left;
+ 	border-left:solid 1px #75736E;
+ 	border-bottom:solid 1px #75736E;*/
+ }
+ .bold-grid .datatable .header TH.first 
+ { 
+ 	width:40px; 
+ 	border-left:none;
+ } 
+ 
+ /* group header */
+ .bold-grid .datatable .group TH
+ {
+ 	padding:10px 0px 6px 0px;
+ 	color:#666666; 
+ 	text-align:left;
+ 	border-bottom:solid 1px #7F7F7F;
+ } 
+ .bold-grid .datatable .group TH.first
+ {
+ 	padding-left:8px;
+ 	text-align:left;         	
+ }              
+ .bold-grid .datatable .group .toggle
+ {   
+    width:14px;
+    height:14px;
+    display:-moz-inline-box;
+    display:inline-block;  
+    vertical-align:middle;	   
+ }
+ 
+ .bold-grid .datatable .group .expand { background:url(img/plus.gif) 50% 50% no-repeat; }
+ .bold-grid .datatable .group .collapse { background:url(img/minus.gif) 50% 50% no-repeat; }
+ .bold-grid .datatable .group .expand:hover { background:url(img/plus-hover.gif) 50% 50% no-repeat; }
+ .bold-grid .datatable .group .collapse:hover { background:url(img/minus-hover.gif) 50% 50% no-repeat; } 
+ 
+ /* data items */                                       
+ .bold-grid .datatable .item TD
+ {
+ 	padding:3px 0px 3px 6px;
+ 	color:#222222;   
+ 	border-bottom:solid 1px #BBD9EE;   	
+ } 
+ .bold-grid .datatable .altitem TD
+ {
+ 	padding:3px 0px 3px 6px;
+ 	color:#222222;
+ 	border-bottom:solid 1px #BBD9EE;   	
+ } 
+ 
+ /* pager */  
+.bold-grid .datapager 
+{ 
+	width:100%; 
+	background:url(img/header-bg.png);
+ 	border-top:solid 1px #7F7F7F;
+}
+.bold-grid .datapager TD 
+{
+	height:35px; 
+	color:#666;
+}  
+.bold-grid .datapager .commands
+{
+	height:35px;
+    padding:4px 0px 0px 25px;
+}      
+.bold-grid .datapager .page-command
+{
+    width:40px;
+    height:19px;
+    margin-right:4px;
+    display:-moz-inline-box;
+    display:inline-block;  
+    vertical-align:middle;	   
+}        
+.bold-grid .datapager .first-page { background:url(img/first.gif) 50% 50% no-repeat; }
+.bold-grid .datapager .prev-page { background:url(img/prev.gif) 50% 50% no-repeat; }
+.bold-grid .datapager .next-page { background:url(img/next.gif) 50% 50% no-repeat; }
+.bold-grid .datapager .last-page { background:url(img/last.gif) 50% 50% no-repeat; }                        
+.bold-grid .datapager .info
+{
+    padding:4px 25px 0px 0px;
+	text-align:right;
+}       
+.hidden
+{
+	display:none;
+	visibility:hidden;
+} 

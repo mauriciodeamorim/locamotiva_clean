@@ -1,0 +1,84 @@
+﻿a:link { 
+color : #000; 
+} 
+a:visited { 
+color : #4D6F80; 
+} 
+a:hover { 
+color : Blue;
+text-decoration : underline;
+} 
+a:active
+{
+	text-decoration: none;
+}
+/* table style */
+table.yui-datatable-theme
+{
+	font-family:arial;
+	font-size:16px;
+	border:solid 1px #7f7f7f;
+	width:100%;   
+}
+
+/* common cell styles */
+.yui-datatable-theme th, .yui-datatable-theme td
+{
+    cursor:default;
+}
+
+/* header cell styles */
+.yui-datatable-theme th
+{
+    background: url(../img/sprite.png) repeat-x 0px 0px;
+    border-color: #989898 #cbcbcb #989898 #989898;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+    color: #000;
+    padding: 4px 5px 4px 10px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+/* data data cell style */
+.yui-datatable-theme td
+{
+    padding:4px 10px 4px 10px;
+    border-right:solid 1px #cbcbcb;
+    text-decoration:none;
+}
+.yui-datatable-theme a
+{
+    text-decoration:none;
+}
+/* alternating row style */
+.yui-datatable-theme .alt-data-row { background-color:#F7F6F3; }/*#A1B3BC*/
+.yui-datatable-theme .data-row { background-color:#fff; }
+
+/* mouseover row style */
+.yui-datatable-theme .row-over, .yui-datatable-theme .cell-over { background-color:#b2d2ff; }
+
+/* select row style */
+.yui-datatable-theme .row-select
+{ 
+	background-color:#E2DED6; 
+	color:#333333;
+	font-weight:900;
+}
+
+.yui-datatable-theme .empty-data
+{
+	background: url(../img/sprite.png) repeat-x 0px 0px;
+    border-color: #989898 #cbcbcb #989898 #989898;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+    color: #000;
+    padding: 4px 5px 4px 10px;
+    text-align: center;
+    font-weight:500;
+    letter-spacing:1pt;
+}
+
+
+ 
+
