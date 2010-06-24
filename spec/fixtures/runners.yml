@@ -1,0 +1,34 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+runner_one:
+  id: 1
+  name: Atleta numero um
+  sex: M
+  birthday: 2009-09-18
+  cpf: 00011100099
+  phone: 12345678
+  cel: 87654321
+  nick: um
+  email: atleta@um.com
+
+runner_two:
+  id: 2
+  name: Atleta numero dois
+  sex: M
+  birthday: 2009-05-11
+  cpf: 22211100099
+  phone: 01245780
+  cel: 99995555
+  nick: dois
+  email: atleta@dois.com
+  
+runner_three:
+  id: 3
+  name: Atleta numero tres
+  sex: M
+  birthday: 2000-01-05
+  cpf: 12311100066
+  phone: 01010101
+  cel: 805050505
+  nick: tres
+  email: atleta@tres.com

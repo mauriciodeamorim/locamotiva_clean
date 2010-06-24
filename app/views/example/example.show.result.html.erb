@@ -1,0 +1,78 @@
+<!index de resultado>
+<h1 style="color: yellow">xxx</h1>
+
+  <tr style="color: blue">
+  <td>Data: <%=h @results_per_competition.prova.data %></td>
+    <td>Nome: <%=h @results_per_competition.prova.nome %></td>
+    <td>Extensão: <%=h @results_per_competition.prova.distancia %></td>
+  </tr>
+
+
+Resultados para prova
+<% for prova in @prova %>
+<p>
+  <b>Nome:</b>
+  <%=h prova.nome %>
+</p>
+<% end %>
+<table>
+  <tr style="color: blue">
+    <td><%=h @last_competition.id %></td>
+    <td> --- </td>
+    <td><%=h @last_competition.nome %></td>
+    <td><%=h @last_competition.etapa %></td>
+    <td><%=h @last_competition.data %></td>
+    <td><%=h @last_competition.local %></td>
+    <td><%=h @last_competition.url %></td>
+    <td><%=h @last_competition.distancia %></td>
+  </tr>
+
+  <tr>
+    <td>Id</td>
+    <td>Nome</td>
+    <td>Distância</td>
+    <td>IdProva</td>
+  </tr>
+
+<% for r in @results %>
+  <tr>
+    <td><%=h r.id %></td>
+    <td><%=h r.nome %></td>
+    <td><%=h r.sexo %></td>
+    <td><%=h r.distancia %></td>
+    <td><%=h r.idProva %></td>
+  </tr>
+<% end %>
+</table>
+<br/>
+<br/>
+<br/>
+<div>
+    <table>
+      <tr>
+        <td>Id</td>
+        <td>Nome</td>
+        <td>Etapa</td>
+        <td>Data</td>
+        <td>Local</td>
+        <td>Url</td>
+        <td>Distância</td>
+      </tr>
+
+    <% for competition in @all_competitions %>
+      <tr>
+        <td><%=h competition.id %></td>
+        <td> --- </td>
+        <td><%= link_to competition.nome, "resultados/show/#{competition.id}" %></td>
+        <td><%=h competition.etapa %></td>
+        <td><%=h competition.data %></td>
+        <td><%=h competition.local %></td>
+        <td><%=h competition.url %></td>
+        <td><%=h competition.distancia %></td>
+      </tr>
+    <% end %>
+    </table>
+    <div><%= list_of_results(2) %></div>
+
+</div>
+

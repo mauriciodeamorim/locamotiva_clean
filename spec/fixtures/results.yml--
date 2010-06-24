@@ -1,0 +1,126 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  start_number: 123
+  category: M3034
+  team: Locamotiva
+  liquid_time: '2009-09-10 00:40:32'
+  official_time: '2009-09-10 00:46:32'
+  class_general: 100
+  class_sex: 90
+  class_category: 10
+  pace: '00:46:32'
+  distance: 15Km
+  substitute: 
+  notes:
+  id_race: 4
+  id_runner: 1
+
+two:
+  start_number: 222
+  category: M3034
+  team: Locamotiva
+  liquid_time: '2009-09-10 00:46:32'
+  official_time: '20090901004825'
+  class_general: 222
+  class_sex: 200
+  class_category: 22
+  pace: <%= DateTime.civil(2009,9,19,0,4,40) %>
+  distance: 15Km
+  substitute: 
+  notes:
+  id_race: 4
+  id_runner: 2
+  
+three:
+  start_number: 333
+  category: M3034
+  team: Locamotiva
+  liquid_time: <%= DateTime.civil(2009,9,19,0,46,32) %>
+  official_time: <%= DateTime.civil(2009,9,19,0,50,1) %>
+  class_general: 333
+  class_sex: 333
+  class_category: 33
+  pace: <%= DateTime.civil(2009,9,19,0,4,40) %>
+  id_race: 4
+  id_runner: 3  
+
+four:
+  start_number: 100
+  category: M3034
+  team: Locamotiva
+  liquid_time: <%= DateTime.civil(2009,9,19,0,46,32) %>
+  official_time: <%= DateTime.civil(2009,9,19,0,50,1) %>
+  class_general: 100
+  class_sex: 100
+  class_category: 10
+  pace: <%= DateTime.civil(2009,9,19,0,4,40) %>
+  id_race: 1
+  id_runner: 1
+
+five:
+  start_number: 200
+  category: M3034
+  team: Locamotiva
+  liquid_time: <%= DateTime.civil(2009,9,19,0,46,32) %>
+  official_time: <%= DateTime.civil(2009,9,19,0,50,1) %>
+  class_general: 200
+  class_sex: 200
+  class_category: 20
+  pace: <%= DateTime.civil(2009,9,19,0,4,40) %>
+  id_race: 1
+  id_runner: 2
+
+six:
+  start_number: 3002
+  category: M3034
+  team: Locamotiva
+  liquid_time: <%= DateTime.civil(2009,9,19,0,46,32) %>
+  official_time: <%= DateTime.civil(2009,9,19,0,50,1) %>
+  class_general: 300
+  class_sex: 300
+  class_category: 30
+  pace: <%= DateTime.civil(2009,9,19,0,4,40) %>
+  id_race: 2
+  id_runner: 1
+
+seven:
+  start_number: 789
+  category: M3034
+  team: Locamotiva
+  liquid_time: <%= DateTime.civil(2009,9,19,0,46,32) %>
+  official_time: <%= DateTime.civil(2009,9,19,0,50,1) %>
+  class_general: 789
+  class_sex: 789
+  class_category: 78
+  pace: <%= DateTime.civil(2009,9,19,0,4,40) %>
+  id_race: 3
+  id_runner: 1
+  
+eight:
+  start_number: 456
+  category: M3034
+  team: Locamotiva
+  liquid_time: <%= DateTime.civil(2009,9,19,0,46,32) %>
+  official_time: <%= DateTime.civil(2009,9,19,0,50,1) %>
+  class_general: 456
+  class_sex: 456
+  class_category: 45
+  pace: <%= DateTime.civil(2009,9,19,0,4,40) %>
+  id_race: 3
+  id_runner: 2
+  
+nine:
+  start_number: 147
+  category: M3034
+  team: Locamotiva
+  liquid_time: <%= DateTime.civil(2009,9,19,0,46,32) %>
+  official_time: <%= DateTime.civil(2009,9,19,0,50,1) %>
+  class_general: 147
+  class_sex: 147
+  class_category: 14
+  pace: <%= DateTime.civil(2009,9,19,0,4,40) %>
+  id_race: 3
+  id_runner: 3
+
+  

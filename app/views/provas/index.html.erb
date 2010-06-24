@@ -1,0 +1,24 @@
+<table>
+<% for prova in @provas %>
+  <tr>
+    <td class='data'>
+        <div style="text-align:center;"><%= prova.data.strftime('%d') %></div>
+        <div style="text-align:center;"><%= prova.data.strftime('%b') %></div>
+    </td>
+    <td class="prova"><%= link_to prova.nome, resultado_path(prova.id) %></td>
+    <td class="prova"><%=h prova.distancia %></td>
+  </tr>
+<% end %>
+</table>
+<!--
+  <tr>
+    <th>Data</th>
+    <th>Nome</th>
+    <th>Local</th>
+    <th>Distancia</th>
+    <th>Url</th>
+  </tr>
+<td><a href="<%= prova.url %>" target="_blank">site oficialc</a></td>
+    <td style="font-size:20px; padding: 10px;"><%=h prova.local %></td>
+  -->
+

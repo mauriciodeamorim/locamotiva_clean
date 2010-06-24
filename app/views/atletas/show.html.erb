@@ -1,0 +1,28 @@
+<p>
+  <b>Nome:</b>
+  <%=h @atleta.nome %>
+</p>
+
+<p>
+  <b>Data nasc:</b>
+  <%=h @atleta.data_nasc %>
+</p>
+
+<p>
+  <b>Cpf:</b>
+  <%=h @atleta.cpf %>
+</p>
+
+<p>
+  <b>Celular:</b>
+  <%=h @atleta.celular %>
+</p>
+
+<p>
+  <b>Notas:</b>
+  <%=h @atleta.notas %>
+</p>
+
+
+<%= link_to 'Edit', edit_atleta_path(@atleta) %> |
+<%= link_to 'Back', atletas_path %>

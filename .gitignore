@@ -1,0 +1,13 @@
+.DS_Store
+**/pkg
+**/doc
+pkg
+doc
+*~
+*swp
+*swo
+*.gem
+*.tmproj
+log/*.log
+tmp/**/*
+config/database.yml

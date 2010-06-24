@@ -1,0 +1,33 @@
+<p>
+  <b>Nome:</b>
+  <%=h @prova.nome %>
+</p>
+
+<p>
+  <b>Etapa:</b>
+  <%=h @prova.etapa %>
+</p>
+
+<p>
+  <b>Data:</b>
+  <%=h @prova.data %>
+</p>
+
+<p>
+  <b>Local:</b>
+  <%=h @prova.local %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @prova.url %>
+</p>
+
+<p>
+  <b>Distancia:</b>
+  <%=h @prova.distancia %>
+</p>
+
+
+<%= link_to 'Edit', edit_prova_path(@prova) %> |
+<%= link_to 'Back', provas_path %>

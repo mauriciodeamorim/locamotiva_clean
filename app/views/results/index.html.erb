@@ -1,0 +1,42 @@
+<h1>Provas recentes</h1>
+<div>
+	<div class="dateBox">
+		<div class="date">
+	    <div class="bigDate"><%= @race.date.strftime('%d') %></div>
+	    <div class="bigDate"><%= @race.date.strftime('%b') %></div>
+		</div>
+		<div class="countdown"> </div>
+	</div>
+  <div class="race_title"><%= @race.name %></div>
+  <div class="race_title black"><%= @race.distance %></div>
+</div>
+
+<table class="prova">
+  <tr>
+    <td style="color: #000">Número</td>
+    <td style="color: #000">Atleta</td>
+    <td style="color: #000">Tempo oficial</td>
+    <td style="color: #000">Tempo líquido</td>
+    <td style="color: #000">Classificação</td>
+  </tr>
+
+<% for results in @results_by_race %>
+  <tr>
+    <td><%=h results.start_number %></td>
+    <td><%=h results.runner.name %></td>
+    <td><%=h results.official_time.strftime("%H:%M:%S") %></td>
+    <td><%=h results.liquid_time.strftime("%H:%M:%S") %></td>
+    <td><%=h results.class_general %></td>
+  </tr>
+<% end %>
+</table>
+
+<% for results in @results_by_race %>
+<div class="prova" style="display:none">
+<span><%=h results.start_number %></span>
+<span><%=h results.start_number %></span>
+<span><%=h results.start_number %></span>
+<span><%=h results.start_number %></span>
+<span><%=h results.start_number %></span>
+</div>
+<% end %>
